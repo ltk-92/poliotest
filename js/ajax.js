@@ -54,8 +54,9 @@ jQuery(document).ready(function(){
                 var img = $("<img/>");
                 img.attr("src","img/"+info_img);
                 var title = $('<p />').text(info_title);
+                title.attr("class","info-title");
                 var text = $('<p />').text(info_text);
-               var infoCon = $("<div />");
+                var infoCon = $("<div />");
                 infoCon.attr("class","info-con");
                 infoCon.append(img);
                 infoCon.append(title);
