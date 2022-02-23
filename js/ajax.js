@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
     var webinfo = $('.web-info');
     $.ajax({
         type : "GET",            // HTTP method type(GET, POST) 형식이다.
-        url : "js/webinfo.json",      // 컨트롤러에서 대기중인 URL 주소이다.
+        url : "https://ltk-92.github.io/poliotest/",      // 컨트롤러에서 대기중인 URL 주소이다.
         data : "JSON",            // Json 형식의 데이터이다.
         success : function(data){ // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
             // 응답코드 > 0000
