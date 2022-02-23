@@ -47,20 +47,20 @@ jQuery(document).ready(function(){
         // load = info
         // console.log(load);
         // webinfo.text(info);
-                var str = JSON.stringify(info);
-                var info_img = str.img;
-                var info_title = str.title;
-                var info_text = str.text;
+                alert(info[0].img);
+                var info_img = info.img;
+                var info_title = info.title;
+                var info_text = info.text;
                 var img = $("<img/>");
                 img.attr("src",+"'"+info_img+"'");
                 var title = $('<p />').text(info_title);
                 var text = $('<p />').text(info_text);
                var infoCon = $("<div />");
                 infoCon.attr("class","info-con");
-               // infoCon.append(img);
-               // infoCon.append(title);
-               // infoCon.append(text);
-                //webinfo.append(infoCon);
+                infoCon.append(img);
+                infoCon.append(title);
+                infoCon.append(text);
+                webinfo.append(infoCon);
                 console.log("img:"+img);
                 console.log("title:"+title);
           console.log("text:"+text);
