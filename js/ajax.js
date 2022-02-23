@@ -55,6 +55,9 @@ jQuery(document).ready(function(){
                 infoCon.append(title);
                 infoCon.append(text);
                 webinfo.append(infoCon);
+                console.log("img:"+img);
+                console.log("title:"+title);
+                console.log("text:"+text);
            
         },
         error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
