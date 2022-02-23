@@ -50,7 +50,8 @@ jQuery(document).ready(function(){
                 var img = "<img src='img/"+info_img+"'>";
                 var title = $('<p />').text(info_title);
                 var text = $('<p />').text(info_text);
-                var infoCon = "<div class='info-con'></div>";
+                var infoCon = $("div");
+                infoCon.attr("class","info-con");
                 infoCon.append(img);
                 infoCon.append(title);
                 infoCon.append(text);
