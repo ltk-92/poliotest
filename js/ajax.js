@@ -44,13 +44,13 @@ jQuery(document).ready(function(){
             // 응답코드 > 0000
             
          // 데이터 =info
-                var info_img = info.img;
-                var info_title = info.title;
-                var info_text = info.text;
+                var url_img = url.img;
+                var url_title = url.title;
+                var url_text = url.text;
                 var img = $("<img/>");
-                img.attr("src","'img/"+info_img+"'");
-                var title = $('<p />').text(info_title);
-                var text = $('<p />').text(info_text);
+                img.attr("src","'img/"+url_img+"'");
+                var title = $('<p />').text(url_title);
+                var text = $('<p />').text(url_text);
                 var infoCon = $("<div />");
                 infoCon.attr("class","info-con");
                 infoCon.append(img);
