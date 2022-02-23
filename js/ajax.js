@@ -44,25 +44,25 @@ jQuery(document).ready(function(){
             // 응답코드 > 0000
             
          // 데이터 =info
-         load = info
-         console.log(load);
-         webinfo.text(info);
-                //var info_img = info.img;
-                //var info_title = info.title;
-                //var info_text = info.text;
-               // var img = $("<img/>");
-               // img.attr("src","'img/"+info_img+"'");
-              //  var title = $('<p />').text(info_title);
-              //  var text = $('<p />').text(info_text);
-              // var infoCon = $("<div />");
-              //  infoCon.attr("class","info-con");
-              //  infoCon.append(img);
-              //  infoCon.append(title);
-              //  infoCon.append(text);
-              //  webinfo.append(infoCon);
-              //  console.log("img:"+img);
-               // console.log("title:"+title);
-         // console.log("text:"+text);
+        // load = info
+        // console.log(load);
+        // webinfo.text(info);
+                var info_img = info.img;
+                var info_title = info.title;
+                var info_text = info.text;
+                var img = $("<img/>");
+                img.attr("src",+info_img);
+                var title = $('<p />').text(info_title);
+                var text = $('<p />').text(info_text);
+               var infoCon = $("<div />");
+                infoCon.attr("class","info-con");
+                infoCon.append(img);
+                infoCon.append(title);
+                infoCon.append(text);
+                webinfo.append(infoCon);
+                console.log("img:"+img);
+                console.log("title:"+title);
+          console.log("text:"+text);
            
         },
         error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
