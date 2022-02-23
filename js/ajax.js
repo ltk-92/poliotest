@@ -44,7 +44,8 @@ jQuery(document).ready(function(){
             // 응답코드 > 0000
             
          // 데이터 =info
-         console.log(info);
+         load = info
+         console.log(load);
          webinfo.text(info);
                 //var info_img = info.img;
                 //var info_title = info.title;
