@@ -47,7 +47,8 @@ jQuery(document).ready(function(){
                 var info_img = info.img;
                 var info_title = info.title;
                 var info_text = info.text;
-                var img = "<img src='img/"+info_img+"'>";
+                var img = $("<img/>");
+                img.attr("src","'img/"+info_img+"'");
                 var title = $('<p />').text(info_title);
                 var text = $('<p />').text(info_text);
                 var infoCon = $("<div />");
