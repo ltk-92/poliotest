@@ -47,7 +47,7 @@ jQuery(document).ready(function(){
         // load = info
         // console.log(load);
         // webinfo.text(info);
-                alert(info[0].img);
+             $.each(json, function (index, item){
                 var info_img = info.img;
                 var info_title = info.title;
                 var info_text = info.text;
@@ -63,8 +63,8 @@ jQuery(document).ready(function(){
                 webinfo.append(infoCon);
                 console.log("img:"+img);
                 console.log("title:"+title);
-          console.log("text:"+text);
-           
+                console.log("text:"+text);
+             });
         },
         error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
             alert("통신 실패.")
