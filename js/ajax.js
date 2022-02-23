@@ -40,26 +40,27 @@ jQuery(document).ready(function(){
         type : "GET",            // HTTP method type(GET, POST) 형식이다.
         url : "https://ltk-92.github.io/poliotest//js/webinfo.json",      // 컨트롤러에서 대기중인 URL 주소이다.         
         dataType: "json", // Json 형식의 데이터이다.
-        success : function(url){ // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
+        success : function(info){ // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
             // 응답코드 > 0000
             
          // 데이터 =info
-                var url_img = url.img;
-                var url_title = url.title;
-                var url_text = url.text;
-                var img = $("<img/>");
-                img.attr("src","'img/"+url_img+"'");
-                var title = $('<p />').text(url_title);
-                var text = $('<p />').text(url_text);
-                var infoCon = $("<div />");
-                infoCon.attr("class","info-con");
-                infoCon.append(img);
-                infoCon.append(title);
-                infoCon.append(text);
-                webinfo.append(infoCon);
-                console.log("img:"+img);
-                console.log("title:"+title);
-                console.log("text:"+text);
+         webinfo.text(info);
+                //var info_img = info.img;
+                //var info_title = info.title;
+                //var info_text = info.text;
+               // var img = $("<img/>");
+               // img.attr("src","'img/"+info_img+"'");
+              //  var title = $('<p />').text(info_title);
+              //  var text = $('<p />').text(info_text);
+              // var infoCon = $("<div />");
+              //  infoCon.attr("class","info-con");
+              //  infoCon.append(img);
+              //  infoCon.append(title);
+              //  infoCon.append(text);
+              //  webinfo.append(infoCon);
+              //  console.log("img:"+img);
+               // console.log("title:"+title);
+         // console.log("text:"+text);
            
         },
         error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
