@@ -47,10 +47,10 @@ jQuery(document).ready(function(){
         // load = info
         // console.log(load);
         // webinfo.text(info);
-             $.each(json, function (index, item){
-                var info_img = info.img;
-                var info_title = info.title;
-                var info_text = info.text;
+             $.each(info, function (index, item){
+                var info_img = item.img;
+                var info_title = item.title;
+                var info_text = item.text;
                 var img = $("<img/>");
                 img.attr("src",+"'"+info_img+"'");
                 var title = $('<p />').text(info_title);
