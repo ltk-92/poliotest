@@ -24,33 +24,7 @@
 	});
     
     //마우스 휠 동작시 아래로 스크롤 이동
-	$(window).scroll(function(){
-		logodel();
-        var size = $('section').size();//갯수
-		$('section').on('mousewheel',function(event,delta){
-			if(delta>0 && $(this).index()>=1){
-				var prev = $(this).prev().offset().top;
-				$('html,body').stop().animate({'scrollTop':prev},2000,'easeOutExpo');
-				
-				
-			}else if(delta<0 && $(this).index()<3){
-				var next = $(this).next().offset().top; 
-				$('html,body').stop().animate({'scrollTop':next},2000,'easeOutExpo');
-			}else if(delta<0 && $(this).index()==3){
-				var footer = $("#footer-wrap").offset().top;
-				$('html,body').stop().animate({'scrollTop':footer},2000,'easeOutExpo');
-			}
-			
-		});
-		$('#footer-wrap').on('mousewheel',function(event,delta){
-            if(delta>0){
-				var section_tail = $("section").eq(3).offset().top;
-				$('html,body').stop().animate({'scrollTop':section_tail},2000,'easeOutExpo');
-				
-				
-			}
-        });
-	});		
+	
     //end
 	 console.log("test");
 	 
