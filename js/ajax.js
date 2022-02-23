@@ -35,7 +35,7 @@
 });*/
 jQuery(document).ready(function(){
     
-    var webinfo = $('.web-info');
+    var webinfo = $('.web-info').eq(0);
     $.ajax({
         type : "GET",            // HTTP method type(GET, POST) 형식이다.
         url : "https://ltk-92.github.io/poliotest//js/webinfo.json",      // 컨트롤러에서 대기중인 URL 주소이다.         
@@ -47,10 +47,10 @@ jQuery(document).ready(function(){
                 var info_img = info.img;
                 var info_title = info.title;
                 var info_text = info.text;
-                var img = $('<img />').attr("src", "img/"+info_img);
+                var img = "<img src='img/"+info_img+"'>";
                 var title = $('<p />').text(info_title);
                 var text = $('<p />').text(info_text);
-                var infoCon = $('.info-con');
+                var infoCon = "<div class='info-con'></div>";
                 infoCon.append(img);
                 infoCon.append(title);
                 infoCon.append(text);
