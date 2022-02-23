@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
                 var info_title = item.title;
                 var info_text = item.text;
                 var img = $("<img/>");
-                img.attr("src","'img/"+info_img+"'");
+                img.attr("src","img/"+info_img);
                 var title = $('<p />').text(info_title);
                 var text = $('<p />').text(info_text);
                var infoCon = $("<div />");
