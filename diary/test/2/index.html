@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css" >
+			#container { border:1px solid black; padding:20px; margin:30px;  color:red; font-size:30px; }
+			#header { font-size:30px; color:red; }
+			#contents { color:blue; font-size:20px; }
+		</style>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+		    jQuery(document).ready(function(){
+			var container = $("#container");
+				container.load('data/sub.html #wrapper')
+		    });
+		 </script>
+	</head>
+	<body>
+		<div id="container">
+			
+		</div>
+	</body>
+</html>
