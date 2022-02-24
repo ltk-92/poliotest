@@ -379,6 +379,7 @@ section{
 .web-info .info-title{
     font-size:30px;
     text-align:center;
+    font-weight:bold;
 }
 .info-con{
     width:50%;
