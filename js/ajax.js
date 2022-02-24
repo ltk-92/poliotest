@@ -66,7 +66,7 @@ jQuery(document).ready(function(){
                 $(".info-con").find("img[attr='img/undefind']").remove();
                 console.log("img:"+img);
                 console.log("title:"+title);
-                console.i("text:"+text);
+                console.log("text:"+text);
              });
         },
         error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
