@@ -62,12 +62,12 @@ jQuery(document).ready(function(){
                 infoCon.append(title);
                 infoCon.append(text);
                 webinfo.append(infoCon);
-                if($(".info-con").children().length == 0){
-                    $(this).remove();
-                };
+                infoCon.find("p:empty").remove();
+                var undefind = $("img").attr("src","img/undefind");
+                infoCon.find("img").remove(undefind);
                 console.log("img:"+img);
                 console.log("title:"+title);
-                console.log("text:"+text);
+                console.i("text:"+text);
              });
         },
         error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
