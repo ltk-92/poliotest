@@ -62,6 +62,9 @@ jQuery(document).ready(function(){
                 infoCon.append(title);
                 infoCon.append(text);
                 webinfo.append(infoCon);
+                if($(".info-con").children().length == 0){
+                    $(this).remove();
+                };
                 console.log("img:"+img);
                 console.log("title:"+title);
                 console.log("text:"+text);
