@@ -63,8 +63,7 @@ jQuery(document).ready(function(){
                 infoCon.append(text);
                 webinfo.append(infoCon);
                 infoCon.find("p:empty").remove();
-                var undefind = $("img").attr("src","img/undefind");
-                infoCon.find("img").remove(undefind);
+                infoCon.find("img[attr='img/undefind']").remove();
                 console.log("img:"+img);
                 console.log("title:"+title);
                 console.i("text:"+text);
