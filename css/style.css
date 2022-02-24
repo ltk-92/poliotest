@@ -388,7 +388,7 @@ section{
 .web-info p.info-margin{
     margin-bottom:110px;
 }
-p.info-con{
+.info-con p{
     margin: 30px auto;
     font-size:20px;
     line-height:150%;
