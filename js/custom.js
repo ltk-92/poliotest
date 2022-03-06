@@ -8,20 +8,18 @@
 	//	$('.p12').css({'right':130+(posX/30),'botttom':-40+(posY/30)});
 		
 	//})
-	
+	var textset;
 	$(".main-menu>li").on('click',function(){//메뉴 클릭시 스크롤 이동
 		logodel();
 		//e.preventDefault();
-		var i = $(this).index();
+		var m = $(this).index();
         var sum = 0;
-        for(i=i;i>=0;i--){
+        for(i=m;i>=0;i--){
             sum += $('.realm').eq(i).height();
         };
-        var header = $("header").height();
-		var nowTop = sum - header;
-		var ji = i+1;
+		var nowTop = sum;
 		$('html, body').stop().animate({'scrollTop':nowTop},1000);
-		
+		var ji = m+1;
 		$(".realm").children().addClass("pagehide");
 		$(".realm").children().removeClass("pageshow");	
 		$(".realm").eq(ji).children().removeClass("pagehide");
@@ -32,7 +30,6 @@
     //마우스 휠 동작시 아래로 스크롤 이동
 	$(window).scroll(function(){
 		logodel();
-		slideText();
 		var sectionTop = parseInt($("#profile-wrap").offset().top);
 		console.log("sectionTop"+sectionTop);
 		//if($(window).scrollTop()==sectionTop){
@@ -47,14 +44,18 @@
 				pageshow(present);
 				var presentTop = present.offset().top;
 				$('html,body').stop().animate({'scrollTop':presentTop},2000,'easeOutExpo')
-				
-				
+				 if(delta>0 && $(this).index()==1){
+					clearInterval(textset);
+					slideText();
+				};
 			}else if(delta<0 && $(this).index()<3){
 				var present = $(this).next();
 				pageshow(present);
 				var presentTop = present.offset().top; 
 				$('html,body').stop().animate({'scrollTop':presentTop},2000,'easeOutExpo')
-			
+				if(delta<0 && $(this).index()==0){
+					clearInterval(textset);
+				};
 			}else if(delta<0 && $(this).index()==3){
 				var present = $("#footer-wrap");
 				pageshow(present);
@@ -82,7 +83,6 @@
 	 $(window).ready(function(){
 		draw(200, '.icon-bg', '#000', 'darkblue');
 		logodel();
-		slideText();
 		loadview();
 	 });
 	 
@@ -167,24 +167,17 @@
 				clearInterval(textset);
 			};
 		};
-		
-		if($(window).scrollTop()==0){
-			textset = setInterval(textmotion,interval);			
-		}else if($(window).scrollTop()>0){
+		textset = setInterval(textmotion,interval);			
+		if($(window).scrollTop()>0){
 			//clearInterval(textset);
 			$(".greeting-list>p").hide();
-			textset = "empty";
-			
-			
+			//textset = "empty";
 		};
-		console.log("스크롤값"+$(window).scrollTop());
-		console.log("textset:"+textset);
-		console.log("디스플레이:"+$(".greeting-list>p").css("display"));					
+		//console.log("스크롤값"+$(window).scrollTop());
+		//console.log("textset:"+textset);
+		//console.log("디스플레이:"+$(".greeting-list>p").css("display"));					
 	};
 	function loadview(){
-		if($("#visual-wrap").children().hasClass("pageshow")){
-
-		};
 		var sum = 0;
 		for(l=0;l<5;l++){
 			
@@ -198,8 +191,10 @@
 				$(".realm").children().removeClass("pageshow");
 				$(".realm").eq(l).children().removeClass("pagehide");	
 				$(".realm").eq(l).children().addClass("pageshow");
-				alert(realmL);
 			};
+		};
+		if($("#visual-wrap").eq(0).children().hasClass("pageshow")){
+			slideText();
 		};
 
 	};
