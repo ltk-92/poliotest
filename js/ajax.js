@@ -40,13 +40,23 @@ $(function(){
                     title.attr("class","info-title");
                     var text = $('<p />').html(info_text);
                     var text2 = $('<p />').html(info_text2);
-                    table.attr("class",tableColor)
+                    table.attr("class",tableColor);
                     var tr = $('<tr/>');
                     var infoCon = $("<div />");
                     var td = $('<td/>');
-                    
                     td.attr("colspan",colspan);
-                    var a = $("<a/>")
+                    var a = $("<a/>");
+                    for(t=1;t<5;t++){
+                       var links = [];
+                       links[t] = eval("item.link"+t);
+                       var linkNames = [];
+                       linkNames[t] = eval("item.linkName"+t);
+                       a.attr("href",links[t]); 
+                       a.text(linkNames[t]);
+                       console.log(links);
+                       console.log(linkNames);
+                        
+                    };
                     a.attr("href",link);
                     a.attr("class",btnClass);
                     a.text(linkName);
@@ -58,7 +68,7 @@ $(function(){
                     infoCon.append(text2);
                     webinfo.append(infoCon);
                     $(".info-con").find("p:empty").remove();
-                    $(".info-con").find("a:empty").remove();
+                    $(".info-con").find("a:empty").parent("td").parent("tr").remove();
                     $(".info-con").find("img[src='img/undefined']").remove();
                     console.log("img:"+img);
                     console.log("title:"+title);
