@@ -7,8 +7,8 @@ $(function(){
         var modal =   $('<div/>');
         webinfo.attr("class","web-info");
         modal.attr("class","modal");
-        $("body").prepend(webinfo);
-        $("body").prepend(modal);
+        $(".wrap").prepend(webinfo);
+        $(".wrap").prepend(modal);
         $.ajax({
             type : "GET",            // HTTP method type(GET, POST) 형식이다.
             url : "https://ltk-92.github.io/poliotest//js/"+dataName+".json",      // 컨트롤러에서 대기중인 URL 주소이다.         
