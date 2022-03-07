@@ -1,14 +1,14 @@
 $(function(){
     $(".web-list>li").click(function(){
-        $(".modal").fadeIn(1000);
-        $(".web-info").fadeIn(1000);
         var dataName = $(this).data("name");
         var webinfo = $('<div/>');
-        var modal =   $('<div/>');
+        modal =   $('<div/>');
         webinfo.attr("class","web-info");
         modal.attr("class","modal");
         $(".wrap").prepend(webinfo);
         $(".wrap").prepend(modal);
+        $(".modal").fadeIn(1000);
+        $(".web-info").fadeIn(1000);
         $.ajax({
             type : "GET",            // HTTP method type(GET, POST) 형식이다.
             url : "https://ltk-92.github.io/poliotest//js/"+dataName+".json",      // 컨트롤러에서 대기중인 URL 주소이다.         
@@ -49,15 +49,11 @@ $(function(){
                 alert("통신 실패.")
             }    
         });
+        $('.modal').click(function(){
+           $(".modal").fadeOut(500);
+           $(".web-info").fadeOut(500);
+         
+       });//end modal
     });
-     $(".modal").click(function(){
-        $(".modal").fadeOut(500);
-        $(".web-info").fadeOut(500);
-        return false;
-    
-    });//end modal
-    
-    var webinfo = $('.web-info').eq(0);
-   
- 
+     
 });
