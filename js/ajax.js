@@ -2,6 +2,11 @@ $(function(){
     $(".web-list>li").click(function(){
         var dataName = $(this).data("name");
         var webinfo = $('<div/>');
+        var table = $('<table/>');
+        var tbody = $('<tbody/>');
+        var tr = $('<tr/>');
+        var td = $('<td/>');
+        var a = $("<a/>")
         modal =   $('<div/>');
         webinfo.attr("class","web-info");
         modal.attr("class","modal");
@@ -9,6 +14,7 @@ $(function(){
         $(".wrap").prepend(modal);
         $(".modal").fadeIn(1000);
         $(".web-info").fadeIn(1000);
+    
         $.ajax({
             type : "GET",            // HTTP method type(GET, POST) 형식이다.
             url : "https://ltk-92.github.io/poliotest/js/"+dataName+".json",      // 컨트롤러에서 대기중인 URL 주소이다.         
@@ -32,6 +38,9 @@ $(function(){
                     var text = $('<p />').html(info_text);
                     var text2 = $('<p />').html(info_text2);
                     var infoCon = $("<div />");
+                    a.attr("href","link");
+                    a.text(linkName);
+                    a.attr("target","_blank");
                     infoCon.attr("class","info-con");
                     infoCon.append(img);
                     infoCon.append(title);
@@ -43,6 +52,14 @@ $(function(){
                     console.log("img:"+img);
                     console.log("title:"+title);
                     console.log("text:"+text);
+                    infoCon.append(table);
+                    table.append(tbody);
+                    tbody.append(tr);
+                    tr.append(td);
+                    td.append(a);
+                    if(td == ""){
+                        table.remove()
+                    }
                  });
             },
             error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.

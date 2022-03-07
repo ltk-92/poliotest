@@ -394,6 +394,7 @@ section{
 .info-con{
     width:50%;
     margin:auto;
+    margin-bottom:100px;
 }
 .web-info p.info-margin{
     margin-bottom:110px;
