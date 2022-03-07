@@ -42,6 +42,8 @@ $(function(){
                     var tr = $('<tr/>');
                     var infoCon = $("<div />");
                     var td = $('<td/>');
+                    var colspan = item.colspan;
+                    td.attr("colspan",colspan);
                     var a = $("<a/>")
                     a.attr("href",link);
                     a.text(linkName);
