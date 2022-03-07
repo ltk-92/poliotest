@@ -29,8 +29,8 @@ $(function(){
                     img.attr("src","img/"+info_img);
                     var title = $('<p />').text(info_title);
                     title.attr("class","info-title");
-                    var text = $('<p />').text(info_text);
-                    var text2 = $('<p />').text(info_text2);
+                    var text = $('<p />').html(info_text);
+                    var text2 = $('<p />').html(info_text2);
                     var infoCon = $("<div />");
                     infoCon.attr("class","info-con");
                     infoCon.append(img);
