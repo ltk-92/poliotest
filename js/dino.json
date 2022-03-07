@@ -13,5 +13,14 @@
         "img": "dino-visual-tab.png",
         "text": " 동영상 페이지와 이미지 페이지는 슬라이드 기능을 만들어 양쪽 화살을 누르거나 아랫쪽 이미지 탭을 누르면 이미지와 동영상이 중앙에 뜨도록 했습니다.<br>동영상 페이지는 자바스크립트 배열로 유튜브와 네이버 플레이어의 동영상 주소를 나열하여, 화살표나이미지 탭 클릭시 기존 주소를 지우고 선택된 주소의 동영상이 중앙에 선택되도록 했습니다."
        
+    },
+    {
+        "tableColor":"black-table"
+    },
+    {
+        "linkName":"메인페이지 바로가기",
+        "link":"https://ltk-92.github.io/ltkpo/dino/index.html",
+        "colspan":"4",
+        "class":"main-btn"
     }
 ]
