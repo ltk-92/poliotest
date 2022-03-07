@@ -31,6 +31,9 @@ $(function(){
                     var info_text2 = item.text2;
                     var link = item.link;
                     var linkName = item.linkName;
+                    var tableColor = item.tableColor;
+                    var colspan = item.colspan;
+                    var btnClass= item.class;
                     var img = $("<img/>");
                     img.attr("src","img/"+info_img);
                     var title = $('<p />').text(info_title);
@@ -38,14 +41,14 @@ $(function(){
                     var text = $('<p />').html(info_text);
                     var text2 = $('<p />').html(info_text2);
                     table.attr("class",tableColor)
-                    var tableColor = item.tableColor;
                     var tr = $('<tr/>');
                     var infoCon = $("<div />");
                     var td = $('<td/>');
-                    var colspan = item.colspan;
+                    
                     td.attr("colspan",colspan);
                     var a = $("<a/>")
                     a.attr("href",link);
+                    a.attr("class",btnClass);
                     a.text(linkName);
                     a.attr("target","_blank");
                     infoCon.attr("class","info-con");
@@ -55,6 +58,7 @@ $(function(){
                     infoCon.append(text2);
                     webinfo.append(infoCon);
                     $(".info-con").find("p:empty").remove();
+                    $(".info-con").find("a:empty").remove();
                     $(".info-con").find("img[src='img/undefined']").remove();
                     console.log("img:"+img);
                     console.log("title:"+title);
@@ -64,9 +68,6 @@ $(function(){
                     tbody.append(tr);
                     tr.append(td);
                     td.append(a);
-                    if(a == ""){
-                        table.remove()
-                    };
                  })
             },
             error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
