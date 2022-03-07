@@ -9,16 +9,7 @@
         });*/
 
     //End Each
-    $(".web-list>li>a").click(function(){
-        $(".modal").fadeIn(1000);
-        $(this).siblings(".web-info").fadeIn(1000);
-        return false;
-    });
-     $(".modal").click(function(){
-        $(".modal").fadeOut(500);
-        $(".web-info").fadeOut(500);
-        return false;
-    });//end modal
+    
     //화살표 버튼
      $(".web-list-button>li:first").click(function(){
         $(".web-list>li.web-on").prev().addClass("web-on");

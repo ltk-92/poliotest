@@ -1,80 +1,63 @@
-//jQuery(document).ready(function(){
-//		var tbody = $('#tbody');
-//		$.getJSON('data.json', function(people){
-//			$.each(people,function(i,person){
-//				var text_no = person.no;
-//				var text_name = person.name;
-//				var text_mail = person.mail;
-//				var tr = $('<tr />');
-//				var no = $('<td />').text(text_no);
-//				var name = $('<td />').text(text_name);
-//				var mail = $('<td />').text(text_mail);
-//				tr.append(no);
-//				tr.append(name);
-//				tr.append(mail);
-//				tbody.append(tr);
-				
-				
-				
-//			});
-		
-//		});
-//});
-
-/*jQuery(document).ready(function(){
-   
-    $.getJSON('./js/webinfo.json', function(info){
-        $.each(info,function(i,info){
-           
-            
-            
-            
+$(function(){
+    $(".web-list>li").click(function(){
+        $(".modal").fadeIn(1000);
+        $(".web-info").fadeIn(1000);
+        var dataName = $(this).data("name");
+        var webinfo = $('<div/>');
+        var modal =   $('<div/>');
+        webinfo.attr("class","web-info");
+        modal.attr("class","modal");
+        $("body").prepend(webinfo);
+        $("body").prepend(modal);
+        $.ajax({
+            type : "GET",            // HTTP method type(GET, POST) 형식이다.
+            url : "https://ltk-92.github.io/poliotest//js/"+dataName+".json",      // 컨트롤러에서 대기중인 URL 주소이다.         
+            dataType: "json", // Json 형식의 데이터이다.
+            success : function(info){ // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
+                // 응답코드 > 0000
+                
+             // 데이터 =info
+            // load = info
+            // console.log(load);
+            // webinfo.text(info);
+                 $.each(info, function (index, item){
+                    var info_img = item.img;
+                    var info_title = item.title;
+                    var info_text = item.text;
+                    var info_text2 = item.text2;
+                    var img = $("<img/>");
+                    img.attr("src","img/"+info_img);
+                    var title = $('<p />').text(info_title);
+                    title.attr("class","info-title");
+                    var text = $('<p />').text(info_text);
+                    var text2 = $('<p />').text(info_text2);
+                    var infoCon = $("<div />");
+                    infoCon.attr("class","info-con");
+                    infoCon.append(img);
+                    infoCon.append(title);
+                    infoCon.append(text);
+                    infoCon.append(text2);
+                    webinfo.append(infoCon);
+                    $(".info-con").find("p:empty").remove();
+                    $(".info-con").find("img[src='img/undefined']").remove();
+                    console.log("img:"+img);
+                    console.log("title:"+title);
+                    console.log("text:"+text);
+                 });
+            },
+            error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
+                alert("통신 실패.")
+            }    
         });
+    });
+     $(".modal").click(function(){
+        $(".modal").fadeOut(500);
+        $(".web-info").fadeOut(500);
+        return false;
     
-    
-});*/
-jQuery(document).ready(function(){
+    });//end modal
     
     var webinfo = $('.web-info').eq(0);
-    $.ajax({
-        type : "GET",            // HTTP method type(GET, POST) 형식이다.
-        url : "https://ltk-92.github.io/poliotest//js/webinfo.json",      // 컨트롤러에서 대기중인 URL 주소이다.         
-        dataType: "json", // Json 형식의 데이터이다.
-        success : function(info){ // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
-            // 응답코드 > 0000
-            
-         // 데이터 =info
-        // load = info
-        // console.log(load);
-        // webinfo.text(info);
-             $.each(info, function (index, item){
-                var info_img = item.img;
-                var info_title = item.title;
-                var info_text = item.text;
-                var info_text2 = item.text2;
-                var img = $("<img/>");
-                img.attr("src","img/"+info_img);
-                var title = $('<p />').text(info_title);
-                title.attr("class","info-title");
-                var text = $('<p />').text(info_text);
-                var text2 = $('<p />').text(info_text2);
-                var infoCon = $("<div />");
-                infoCon.attr("class","info-con");
-                infoCon.append(img);
-                infoCon.append(title);
-                infoCon.append(text);
-                infoCon.append(text2);
-                webinfo.append(infoCon);
-                $(".info-con").find("p:empty").remove();
-                $(".info-con").find("img[src='img/undefined']").remove();
-                console.log("img:"+img);
-                console.log("title:"+title);
-                console.log("text:"+text);
-             });
-        },
-        error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
-            alert("통신 실패.")
-        }    
-    });
+   
  
 });
