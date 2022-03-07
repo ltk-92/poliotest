@@ -37,8 +37,8 @@
         "tableColor":"green-table"
     },
     {
-        "linkName1":"메인페이지 바로가기",
-        "link1":"https://ltk-92.github.io/ltkpo/toast/index.html",
+        "linkName":"메인페이지 바로가기",
+        "link":"https://ltk-92.github.io/ltkpo/toast/index.html",
         "colspan":"4",
         "class":"main-btn"
     },
