@@ -47,16 +47,22 @@ $(function(){
                     td.attr("colspan",colspan);
                     var a = $("<a/>");
                     for(t=1;t<5;t++){
+                       var v = t-1;
                        var links = [];
-                       links[t] = eval("item.link"+t);
+                       links[v] = eval("item.link"+t);
                        var linkNames = [];
-                       linkNames[t] = eval("item.linkName"+t);
-                       a.attr("href",links[t]); 
-                       a.text(linkNames[t]);
-                       console.log(links);
-                       console.log(linkNames);
+                       linkNames[v] = eval("item.linkName"+t);
+                       var a = $("<a/>");
+                       var td = $('<td/>');
+                       a.attr("href",links[v]); 
+                       a.text(linkNames[v]);
+                      
+                       td.append(a);
+                       tr.append(td);
                         
                     };
+                    console.log("links"+v+links[v]);
+                    console.log("linkNames"+v+linkNames[v]);
                     a.attr("href",link);
                     a.attr("class",btnClass);
                     a.text(linkName);
