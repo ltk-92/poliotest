@@ -16,5 +16,14 @@
         "img": "tabs.jpg",
         "text": "다양한 탭메뉴로 영화 순위와 리뷰와 기사를 볼 수 있도록 제작했습니다.<br/>사용자들이 재미를 느낄 수 있게 호버 이벤트 시 트랜지션과 트랜스포머 속성으로 이미지가 커지는 효과를 만들었습니다."
        
+    },
+    {
+        "tableColor":"sky-table"
+    },
+    {
+        "linkName":"메인페이지 바로가기",
+        "link":"https://ltk-92.github.io/ltkpo/movist/index.html",
+        "colspan":"4",
+        "class":"main-btn"
     }
 ]
