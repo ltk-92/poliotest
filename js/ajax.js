@@ -31,6 +31,8 @@ $(function(){
                     var info_title = item.title;
                     var info_text = item.text;
                     var info_text2 = item.text2;
+                    var link = item.link;
+                    var linkName = item.linkName;
                     var img = $("<img/>");
                     img.attr("src","img/"+info_img);
                     var title = $('<p />').text(info_title);
@@ -38,7 +40,7 @@ $(function(){
                     var text = $('<p />').html(info_text);
                     var text2 = $('<p />').html(info_text2);
                     var infoCon = $("<div />");
-                    a.attr("href","link");
+                    a.attr("href",link);
                     a.text(linkName);
                     a.attr("target","_blank");
                     infoCon.attr("class","info-con");
