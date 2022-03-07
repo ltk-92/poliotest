@@ -35,12 +35,12 @@
         "linkName":"메인페이지 바로가기",
         "link":"https://ltk-92.github.io/ltkpo/index.html",
         "colspan":"4",
-        "class":"main_btn"
+        "class":"main-_btn"
     },
     {
         "linkName":"다이어리페이지 바로가기",
         "link":"https://ltk-92.github.io/ltkpo/diary/diaty.html",
         "colspan":"4",
-        "class":"main_btn"
+        "class":"main-btn"
     } 
 ]
