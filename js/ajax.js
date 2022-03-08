@@ -57,6 +57,8 @@ $(function(){
                        var td = $('<td/>');
                        a.attr("href",links[v]); 
                        a.text(linkNames[v]);
+                       a.attr("class",btnClass);
+                       a.attr("target","_blank");
                        td.attr("colspan",colspan);
                        td.append(a);
                        tr.append(td);
@@ -65,9 +67,9 @@ $(function(){
                     console.log("links"+v+links[v]);
                     console.log("linkNames"+v+linkNames[v]);
                     //a.attr("href",link);
-                    a.attr("class",btnClass);
+                   
                     //a.text(linkName);
-                    a.attr("target","_blank");
+                   
                     infoCon.attr("class","info-con");
                     infoCon.append(img);
                     infoCon.append(title);
@@ -84,8 +86,8 @@ $(function(){
                     infoCon.append(table);
                     table.append(tbody);
                     tbody.append(tr);
-                    tr.append(td);
-                    td.append(a);
+                   // tr.append(td);
+                   // td.append(a);
                  })
             },
             error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.

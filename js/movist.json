@@ -21,8 +21,8 @@
         "tableColor":"sky-table"
     },
     {
-        "linkName":"메인페이지 바로가기",
-        "link":"https://ltk-92.github.io/ltkpo/movist/index.html",
+        "linkName1":"메인페이지 바로가기",
+        "link1":"https://ltk-92.github.io/ltkpo/movist/index.html",
         "colspan":"4",
         "class":"main-btn"
     }
