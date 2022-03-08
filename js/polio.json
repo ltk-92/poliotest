@@ -38,8 +38,8 @@
         "class":"main-btn"
     },
     {
-        "linkName2":"다이어리페이지 바로가기",
-        "link2":"https://ltk-92.github.io/ltkpo/diary/diaty.html",
+        "linkName1":"다이어리페이지 바로가기",
+        "link1":"https://ltk-92.github.io/ltkpo/diary/diaty.html",
         "colspan":"4",
         "class":"main-btn"
     } 
