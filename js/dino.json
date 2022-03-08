@@ -22,5 +22,15 @@
         "link1":"https://ltk-92.github.io/ltkpo/dino/index.html",
         "colspan":"4",
         "class":"main-btn"
-    }
+    },
+    {
+        "linkName1":"소개 페이지",
+        "linkName2":"이미지 페이지",
+        "linkName3":"동영상 페이지",
+        "linkName4":"예매 페이지",
+        "link1":"https://ltk-92.github.io/ltkpo/dino/sub-about.html",
+        "link2":"https://ltk-92.github.io/ltkpo/dino/sub-photo.html",
+        "link3":"https://ltk-92.github.io/ltkpo/dino/sub-video.html",
+        "link4":"https://ltk-92.github.io/ltkpo/dino/sub-ticket.html"
+    }       
 ]
