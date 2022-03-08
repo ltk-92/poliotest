@@ -44,8 +44,9 @@ $(function(){
                     var tr = $('<tr/>');
                     var infoCon = $("<div />");
                     var td = $('<td/>');
-                    td.attr("colspan",colspan);
+                    
                     var a = $("<a/>");
+
                     for(t=1;t<5;t++){
                        var v = t-1;
                        var links = [];
@@ -56,16 +57,16 @@ $(function(){
                        var td = $('<td/>');
                        a.attr("href",links[v]); 
                        a.text(linkNames[v]);
-                      
+                       td.attr("colspan",colspan);
                        td.append(a);
                        tr.append(td);
                         
                     };
                     console.log("links"+v+links[v]);
                     console.log("linkNames"+v+linkNames[v]);
-                    a.attr("href",link);
+                    //a.attr("href",link);
                     a.attr("class",btnClass);
-                    a.text(linkName);
+                    //a.text(linkName);
                     a.attr("target","_blank");
                     infoCon.attr("class","info-con");
                     infoCon.append(img);
@@ -74,7 +75,8 @@ $(function(){
                     infoCon.append(text2);
                     webinfo.append(infoCon);
                     $(".info-con").find("p:empty").remove();
-                    $(".info-con").find("a:empty").parent("td").parent("tr").remove();
+                    $(".info-con").find("a:empty").remove();
+                    $(".info-con").find("td:empty").remove();
                     $(".info-con").find("img[src='img/undefined']").remove();
                     console.log("img:"+img);
                     console.log("title:"+title);
