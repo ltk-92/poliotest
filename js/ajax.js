@@ -61,15 +61,10 @@ $(function(){
                        a.attr("target","_blank");
                        td.attr("colspan",colspan);
                        td.append(a);
-                       tr.append(td);
-                        
+                       tr.append(td);                    
                     };
                     console.log("links"+v+links[v]);
-                    console.log("linkNames"+v+linkNames[v]);
-                    //a.attr("href",link);
-                   
-                    //a.text(linkName);
-                   
+                    console.log("linkNames"+v+linkNames[v]);      
                     infoCon.attr("class","info-con");
                     infoCon.append(img);
                     infoCon.append(title);
@@ -86,8 +81,6 @@ $(function(){
                     infoCon.append(table);
                     table.append(tbody);
                     tbody.append(tr);
-                   // tr.append(td);
-                   // td.append(a);
                  })
             },
             error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
