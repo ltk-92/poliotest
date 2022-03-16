@@ -79,9 +79,9 @@
 	});		
     //end
 	 console.log("test");
-	 
+	
 	 $(window).ready(function(){
-		draw(200, '.icon-bg', '#000', 'darkblue');
+		draw(200, '.icon-bg', ' #b0dfd8', '#4eb8b9');
 		logodel();
 		loadview();
 	 });
@@ -144,10 +144,10 @@
 		function logodel(){ 
 			if($(window).scrollTop()>0){
 				$("h1").find("img").fadeOut();
-				$(".header-wrap").css("background","rgba(0,0,0,1)");
-			}else{
+				$(".header-wrap").css("background","gba(255,255,255,0.3)");
+			}else if($(window).scrollTop()==0){
 				$("h1").find("img").fadeIn();
-				$(".header-wrap").css("background","rgba(0,0,0,0.3)");				
+				$(".header-wrap").css("background","rgba(255,255,255,0.1)");				
 			};	
 		};
 	function pageshow(present) {
@@ -198,6 +198,16 @@
 		};
 
 	};
+	$(function(){
+		$(window).resize(function(){
+			if($(window).width()<=1430){
+				$(window).scroll(function(){
+					loadview();
+				});
+			};
+		});
+				
+	});      
 	
 });
 

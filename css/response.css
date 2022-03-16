@@ -1,6 +1,18 @@
 @charset "utf-8";
 @media all and (min-width: 901px) and (max-width: 1430px){
-	.main-menu a{
+    #main-wrap article,#footer-wrap article{
+        width:90%;
+        margin:auto;
+    }
+    h2{
+        width:50%;
+        margin:auto;
+        position:static;
+        padding-top:50px;
+        writing-mode:horizontal-tb;
+        transform: translateY(0%); 
+    }
+    .main-menu a{
         letter-spacing: 1px;
     }    
     .greeting-list>li{
@@ -9,19 +21,21 @@
     section{
         width:100%;
     }
-    .profile-info{
-        width:50%;
+    .profile-img{
+        width:150px;
+        height:150px;
     }
-    .icon-list, .web-list, #icon-wrap>article{
-        width:80%;
+    .icon-list, .web-list{
+        width:100%;
+        padding-top:0;
     }
     .icon-list li{
         width:20%;
-        padding:5%;
-        margin-right:5%;
-    }
-    .icon-list li:last-child{
         margin-right:0;
+    }
+    .icon-list .icon-bg{
+        width:150px;
+        height:150px;
     }
    #web-wrap .web-list li{
         width:45%;
@@ -50,6 +64,19 @@
 }
 /*mobile start*/
 @media all and (min-width: 0px) and (max-width: 900px){
+    #main-wrap .realm, #footer-wrap{
+        height:200vh;
+    }
+    #main-wrap article,#footer-wrap article{
+        width:90%;
+        margin:auto;
+    }
+    h2{
+        position:static;
+        padding-top:50px;
+        writing-mode:horizontal-tb;
+        transform: translateY(0%); 
+    }
     .wheel-box{
         bottom:5%;
     }
@@ -64,54 +91,99 @@
         font-size: 12px;
     }    
     #visual-wrap{
-        background-size:contain;
+        background-repeat:no-repeat;
+        background-size:cover;
         height:500px;
     }
     .greeting-list>li{
          font-size:35px;   
     }
-    section{
-        width:100%;
+    .profile-img{
+        width:150px;
+        height:150px;
+    }
+    .profile-title{
+        margin:0;
     }
     .profile-info{
-        width:80%;
+        width:100%;
     }
-    .icon-list, .web-list, #icon-wrap>article, .contact-list{
-        width:80%;
-        overflow:hidden;
+    .icon-list{
+        display:block;
+        padding:0;
     }
-    .icon-list li{
-        width:90%;
+    #profile-wrap .profile-info li{
+        width:100%;
         height:auto;
+        margin:10px auto;
+        padding:3%;
+    }
+    #icon-wrap .icon-list li{
+        width:100%;
+        height:auto;
+        padding:0;
         clear:both;
         margin-right:0;
         margin-bottom:5%;
+        padding-top:5%;
     }
     
+    #icon-wrap .icon-bg, #icon-wrap .icon-con{
+        float:left;
+    }
+   
+    .icon-list .icon-bg{
+        width:150px;
+        height:150px;
+    }
+    .icon-list .icon-con{
+        width:calc(100% - 160px);
+        height:100px;
+        margin:0;
+        padding:5px;
+        margin:0 0 0 10px;
+        border-radius:10px;
+    }
+    #icon-wrap .icon-list li:nth-child(even) .icon-bg{
+        float:right;
+    }
+    #icon-wrap .icon-list li:nth-child(even) .icon-con{
+        float:right;
+        margin:0 10px 0 0;
+    }
     .icon-list li img{
         float:left;
         width:30%;
     }
-    .icon-list li p{
-        margin-left:35%;
-        
-    }
+   
     .icon-list .icon-title {
-        text-align:left;
+        width: 150px;
         font-size:15px;
-        padding:0;
+        padding:10px 0;
+    }
+    #icon-wrap .icon-list li:nth-child(even) .icon-title {
+        margin-left:calc(100% - 150px);
     }
     .icon-list li:last-child{
         margin-right:0;
+        
+    }
+    .icon-space span{
+        line-height:15px;
+        font-size:12px;
     }
     #web-wrap{
          position:relative;
     }
+    #web-wrap .web-list{
+        width:100%;
+    }
     #web-wrap .web-list li{
         width:95%;
+        margin:auto;
         height:100%;
-        margin-right:8%;
         display:none;
+        float:none;
     }
      .web-list li, .web-img {
         height:250px;
@@ -137,11 +209,11 @@
     }
     .web-list-button{
         display:block;
-        width:96%;
+        width:100%;
         overflow:hidden;
         position:absolute;
-        top:45%;
-        left:2%;
+        top:27%;
+        left:0;
     }
     .web-list-button li{
         width:30px;
@@ -201,5 +273,20 @@
         margin-left:5%;
         font-size:18px;
         line-height:57px;
+    }
+    #contact-wrap{
+        width:100%;
+    }
+    #footer-wrap>article>p{
+        font-size:20px;
+    }
+    .contact-phone{
+        font-size:25px;
+    }
+    #contact-form input[type="submit"], #contact-form input[type="reset"]{
+        font-size:15px;
+    }
+    .foot-logo-list{
+        width:80%;
     }
 }

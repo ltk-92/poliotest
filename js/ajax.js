@@ -43,9 +43,9 @@ $(function(){
                     table.attr("class",tableColor);
                     var tr = $('<tr/>');
                     var infoCon = $("<div />");
-                    var td = $('<td/>');
+                    //var td = $('<td/>');
                     
-                    var a = $("<a/>");
+                    //var a = $("<a/>");
 
                     for(t=1;t<5;t++){
                        var v = t-1;
@@ -61,7 +61,8 @@ $(function(){
                        a.attr("target","_blank");
                        td.attr("colspan",colspan);
                        td.append(a);
-                       tr.append(td);                    
+                       tr.append(td);
+                                 
                     };
                     console.log("links"+v+links[v]);
                     console.log("linkNames"+v+linkNames[v]);      
@@ -72,8 +73,7 @@ $(function(){
                     infoCon.append(text2);
                     webinfo.append(infoCon);
                     $(".info-con").find("p:empty").remove();
-                    $(".info-con").find("a:empty").remove();
-                    $(".info-con").find("td:empty").remove();
+                   
                     $(".info-con").find("img[src='img/undefined']").remove();
                     console.log("img:"+img);
                     console.log("title:"+title);
@@ -81,6 +81,8 @@ $(function(){
                     infoCon.append(table);
                     table.append(tbody);
                     tbody.append(tr);
+                    $(".info-con").find("a:empty").parent("td").remove();
+                    //$(".info-con").find("tr:empty").remove();          
                  })
             },
             error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.

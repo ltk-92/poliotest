@@ -1,5 +1,11 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family: 'RixYeroljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};
 
 a{
     text-decoration:none; 
@@ -30,16 +36,29 @@ a{
     width:100%;
     position:fixed;
     z-index:8;
-    background:rgba(0,0,0,0.3);
+    background:rgba(255,255,255,0.2);
     transition: all 1s;
 }
 h1{
-    width:100px;
+    width:300px;
     padding-top:20px;
     margin:auto;
 }
 h1 img{
-    width:100%;
+    width:100%
+}
+h2{
+    color:#fff;
+    font-family: 'Monoton', cursive;
+    font-size:70px;
+    text-align:center;
+    writing-mode:vertical-lr; 
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    font-weight:normal;
+    opacity:0.5;
 }
 nav{
     width:60%;
@@ -111,23 +130,29 @@ section{
 #visual-wrap{
     width:100%;
     height:1080px;
-    background:url('../img/para.jpg');
+    background:url('../img/space.png');
     background-size:cover;
     background-attachment: fixed;
     position:relative;
+}
+#profile-wrap{
+    height:800px;
+    background: linear-gradient(to bottom, #4eb8b9, #27aae1);
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 #icon-wrap,#profile-wrap{
     width:100%;
     position:relative;
 }
 #icon-wrap{
-      background:url('../img/galaxy2.jpg');
+      background-color:#81d3eb;
      background-attachment: fixed;
+     background: linear-gradient(to bottom, #27aae1,#9e7eb9);
 }
 #profile-wrap>article{
     width:1400px;
     margin:auto;
-    padding:100px 0;
     
 }
 #profile-wrap>article:after{
@@ -138,9 +163,11 @@ section{
 }
 .profile-info p{
     line-height:2;
+    color:#fff;
 }
 .name{
     font-size:30px;
+   
 }
 .pagehide{
     opacity:0;
@@ -164,42 +191,55 @@ section{
     font-family: 'Righteous', cursive;
     font-size:100px;
     display:none;
-    text-align:center;
-    
-
+    text-align:center;   
 }
 .greeting-list>p:first-child{
     display:block;
 }
 .profile-img{
-    width:200px;
-    height:200px;
-    border-radius:100%;
-    background-color:#fff;
+    width:250px;
+    height:250px;
     overflow:hidden;
-     margin-right:70px;
-     border:3px solid navy
+    margin:50px auto;
+    border-radius: 100%;
+    border:2px solid #000;
+    background-color:rgb(176, 223, 216);
 }
 .profile-img img{
     width:100%;
 }
 .profile-info{
-    width:600px;
+    width:100%;
+}
+.profile-info li{
+    float:left;
+    width:23%;
+    height:350px;
+    border:2px solid #eee;
+    box-sizing:border-box;
+    padding:1%;
+    border-radius:20px 20px 20px 20px;
+
+}
+.profile-info li:nth-child(2){
+    width:40%;
+    margin:0 5% 0 5%;
 }
 .profile-title{
-    font-size:25px;
-    font-weight:bold;
+    font-size:30px;
+    font-weight:normal;
     margin:20px 0;
+    font-family: 'RixYeoljeongdo_Regular';
 }
 .content-title{
     font-weight:bold;
     font-size:20px;
 }
 #visual-wrap .profile-info{
-    margin-left:50px;
+    margin-left:50px;;
 }
 .icon-list, .web-list{
-    width: 1400px;
+    width: 100%;
     margin:auto;
     padding:100px 0;
 }
@@ -215,17 +255,20 @@ section{
 .icon-list li{
     width:16%;
     height:410px;
-    padding:200px 0 0 0;
     margin-right:5%;
+    position:relative;
 }
-  
+.icon-list li:nth-child(even){
+    padding:250px 0 0 0;
+}
 .icon-list li:last-child{
     margin-right:0;
 }
 
 .icon-bg{
-    width:204px;
-    height:204px;
+    width:200px;
+    height:200px;
+    margin:auto;
     border-radius: 50%;
     animation:iconani 3s infinite;
 }
@@ -245,6 +288,15 @@ section{
     top:50%;
     transform:translate(-50%,-50%)
 }
+.icon-space span{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-family: 'RixYeroljeongdo_Regular';
+    text-align:center;
+    line-height:30px;
+}
 .donut-control-list>li{
     width:40px;
     height:40px;
@@ -262,22 +314,31 @@ section{
     width:70%;
     transform:translate(-50%, -50%);
 }
-.icon-list p{
+.icon-list .icon-con{
+    margin-top:20px;
     font-size:14px;
     line-height:1.5;
     background-color:transparent;
+    color:#fff;
     border:1px solid #fff;
     box-sizing:border-box;
-    color:#fff;
+    padding:10px;
 }
 .icon-list .icon-title{
+    width:100%;
+    color:#fff;
     text-align:center;
-    font-size:18px;
+    font-size:20px;
     font-weight:bold;
-    padding:10px 0;
+    padding:30px 0;
 }
 #web-wrap{
-    background-color:#eee;
+    background: linear-gradient(to bottom,#9e7eb9,#bbb8dc);
+    position:relative;
+}
+#web-wrap article{
+    width:1400px;
+    margin:auto;
 }
 .web-list:after{
     clear:both;
@@ -289,7 +350,7 @@ section{
     float:left;
     margin-bottom:100px;
     margin-right:100px;
-    box-shadow:10px 10px 10px 10px grey;
+    box-shadow:5px 5px 5px 5px rgba(115, 8, 119, 0.3);
     cursor:pointer;
 }
 .web-list li:nth-child(3),.web-list li:nth-child(6),.web-list li:nth-child(9){
@@ -469,41 +530,124 @@ section{
 table{
     margin:auto;
 }
+.web-info table a{
+    letter-spacing:-1px;
+}
 .mobile-box{
     width:300px;
 }
 #footer-wrap{
+    background: #b0dfd8;
     height:1000px;
-    padding:50px 0;
+    position:relative;
 }
-.contact-list{
+#footer-wrap>article>p{
+    text-align:center;
+    font-family: 'RixYeroljeongdo_Regular';
+    font-size:25px;
+    color:#fff;
+    margin-bottom:30px;
+   text-shadow:#4eb8b9 0 5px 0;
+}
+#footer-wrap article>p:First-child{
+    font-size:50px;
+}
+#footer-wrap article{
+    width:1400px;
+    margin:auto;
+  
+}
+#contact-wrap{
     width:50%;
     margin:auto;
+ 
 }
-.contact-list li{
-    width:40%;
-    font-size:14px;
-    float:left;
+.contact-form{
+    width:50%;
 }
-.contact-list li:first-child{
-    margin-right:20%;
-}
-.contact-list li p{
-    width:100px;
-    text-align:center;
-    margin:auto;
-}
-.contact-list li p:last-child{
-    width:200px;
-    line-height:50px;
-    font-size:25px;
-}
-.contact-list:after{
-    content:"";
-    clear:both;
-    display:block;
-}
-.contact-list li img{
+.contact-phone{
     width:100%;
-    text-align:center;
+    height:60px;
+    margin:auto;
+    overflow:hidden;
+    font-family: 'RixYeroljeongdo_Regular';
+    font-size:30px;
+    color:#fff;
+    text-shadow:#4eb8b9 0 5px 0;
+    vertical-align:middle;
+    text-align:center
+}
+.contact-phone span{
+    vertical-align: middle;
+}
+.phone-icon{
+    display:inline-block;
+    width:60px;
+    height:60px;
+}
+.phone-icon img{
+    width:100%;
+}
+#contact-form div{
+    width:100%;
+    overflow:hidden;
+}
+#contact-form label{
+    width:100%;
+    display:inline-block;
+    color:#fff;
+    font-weight:bold;
+    text-shadow:#4eb8b9 2px 2px 0;
+}
+#contact-form input[type="text"], #contact-form input[type="email"],textarea{
+    display:inline-block;
+    width:100%;
+    margin:5px 0 5px 0;
+}
+#contact-form input[type="text"], #contact-form input[type="email"]{
+    height:40px;
+    font-size:30px;
+    padding:5px
+}
+#contact-form textarea{
+    height:300px;
+    font-size:20px;
+}
+#contact-form input[type="submit"],#contact-form input[type="reset"]{
+    float:left;
+    display:block;
+    width:20%;
+    height:50px;
+    font-family: 'RixYeroljeongdo_Regular';
+    background-color:#4eb8b9;
+    font-size:20px;
+    color:#fff;
+    box-sizing:border-box;
+    border:1px solid #eee;
+    cursor:pointer;
+}
+#contact-form input[type="submit"]:hover,#contact-form input[type="reset"]:hover{
+    background-color:#419697;
+}
+#contact-form input[type="submit"]{
+    margin-left:30%;
+}
+.foot-logo-list{
+    width:15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px auto;
+    opacity:0.5;
+}
+.foot-logo-list li{
+  
+    width:60%;
+}
+.foot-logo-list li:last-child{
+    width:35%;
+    margin-left:5%;
+}
+.foot-logo-list img{
+    width:100%;
 }

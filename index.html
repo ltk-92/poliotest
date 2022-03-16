@@ -26,12 +26,14 @@
     <link rel="stylesheet" href="css/response.css" type="text/css">
     <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="./js/ajax.js"></script>
+    <script type="text/javascript" src="./js/send.js"></script>
     <script type="text/javascript" src="./js/slide.js"></script>
     <script type="text/javascript" src="./js/custom.js"></script>	
     <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="./js/prefixfree.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
+   
 	 <!--[if lt IE 9]>
 			 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -58,13 +60,16 @@
 				}
 			</style>
 		<![endif]-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+        </style>
 </head>
 <body>
     <div class="wrap">
          <header class="header-wrap">
             <h1>
                 <a href="./index.html">
-                    <img src="img/bi_em.png" alt="이태규 bi">
+                    <img src="img/bi.png" alt="이태규 bi">
                 </a>
             </h1>
             <nav>
@@ -119,8 +124,9 @@
             </section>
             <section id="profile-wrap" class="realm">
                <article class="pagehide">
+                        <h2>Profile</h2>
                         <div class="profile-img">
-                            <img src="img/profile-img.jpg" alt="프로필 사진">
+                            <img src="img/profile.png" alt="프로필 사진">
                         </div>
                         <div class="profile-info">
                             <ul>
@@ -128,63 +134,72 @@
                                     <p class="profile-title">자기소개</p>  
                                     <p class="name">이태규</p>
                                     <p>1992년 12월 23일</p>
-                                    <p>인천거주</p>
+                                    <p>인천광역시 남동구 거주</p>
+                                    <p>2014년 5월 육군 제대</p>
                                     <p>2017년 2월 서원대학교 경영정보학과 졸업</p>
-                                    <p>2017년 8월그린아카데미 프론트엔드 과정 수료</p>
+                                </li>
+                                 <li>
+                                    <p class="profile-title">과정</p>  
                                     <p>2017년 12월 웹디자인 기능사 취득</p>
-                                    <p>2019년 더조은 아카데미
-                                    자바스크립트 과정 수료</p>
-                                    <p>2020년 html/css,포토샵,일러스트레이터,포트폴리오 과정 수료</p>
-                                </li>                        
+                                    <p>2019년 더조은 아카데미 자바스크립트 과정 수료</p>
+                                     <p>2020년 html/css,포토샵,일러스트레이터,포트폴리오 과정 수료</p>
+                                </li>
+                                <li>
+                                    <p class="profile-title">자격증</p>  
+                                    <p>2016년 운전면허자격증 1종 보통</p>
+                                    <p>2017년 웹디자인 기능사</p>
+                                </li>                                       
             </section>
             <section id="icon-wrap" class="realm">
                 <article class="pagehide">
+                    <h2>skill</h2>
                     <ul class="icon-list">
                         <li>
+                            <p class="icon-title">html5</p>
                             <div class="icon-bg" >
                                 <div class="icon-space"> 
-                                    <img src="img/html5.png" alt="html5 마크">
+                                    <span>still stduying~</span>
                                 </div>    
                             </div>
-                            <p class="icon-title">html5</p>
-                            <p>전반적인 태그의 종류를 알며 웹접근성과 웹표준에 적합한 구조를 만들 수 있습니다.</p>
+                          
+                            <p class="icon-con">전반적인 태그의 종류를 알며 웹접근성과 웹표준에 적합한 구조를 만들 수 있습니다.</p>
                         </li>
                         <li>
-                            <div class="icon-bg">
-                                <div class="icon-space">
-                                    <img src="img/css3.png" alt="css3 마크">
-                                </div>    
-                            </div>
                             <p class="icon-title">css3</p>
-                            <p>전반적인 css와 속성을 알며 이를 홈페이지 제작에 잘 활용할 수 있습니다. </p>
-                        </li>
-                        <li>
                             <div class="icon-bg">
                                 <div class="icon-space">
-                                    <img src="img/js.png" alt="자바스크립트 마크">
+                                    <span>still stduying~</span>
                                 </div>    
                             </div>
-                            <p class="icon-title">제이쿼리,자바스크립트</p>
-                            <p>자바스크립트와 제이쿼리의 기본 내용을 알고 활용할 수 있습니다.</p>
+                            <p class="icon-con">전반적인 css와 속성을 알며 이를 홈페이지 제작에 잘 활용할 수 있습니다. </p>
                         </li>
                         <li>
+                            <p class="icon-title">javascript/jQuery</p>
                             <div class="icon-bg">
                                 <div class="icon-space">
-                                    <img src="img/svn.png" alt="svn 마크">
+                                    <span>still stduying~</span>
+                                </div>    
+                            </div>
+                            <p class="icon-con">자바스크립트와 제이쿼리의 기본 내용을 알고 활용할 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <p class="icon-title">SVN</p>
+                            <div class="icon-bg">
+                                <div class="icon-space">
+                                    <span>still stduying~</span>
                                 </div>
                             </div>
-                            <p class="icon-title">SVN</p>
-                            <p>SVN을 이용하여 형상관리를 할 수 있습니다.</p>
+                            <p class="icon-con">SVN을 이용하여 형상관리를 할 수 있습니다.</p>
                         </li>
                     </li>
                     <li>
+                        <p class="icon-title">GIT/GITHUB</p>
                         <div class="icon-bg">
                             <div class="icon-space">
-                                <img src="img/github.png" alt="svn 마크">
+                                <span>still stduying~</span>
                             </div>    
                         </div>
-                        <p class="icon-title">GIT/GITHUB</p>
-                        <p>깃과 깃허브를 현재 익히고 있습니다.</p>
+                        <p class="icon-con">깃과 깃허브를 현재 익히고 있습니다.</p>
                     </li>
                 </ul>
                 <ul class="donut-control-list">
@@ -195,69 +210,123 @@
                 </article>
             </section>
             <section id="web-wrap" class="realm">
-                <ul class="web-list">
-                    <li class="web-on" data-name="polio">
-                         <div>
-                            <div class="web-img">
-                                    <img src="img/po.jpg" alt="포트폴리오 홈페이지">
+                <article>
+                    <h2>web</h2>
+                    <ul class="web-list">
+                        <li class="web-on" data-name="polio">
+                            <div>
+                                <div class="web-img">
+                                        <img src="img/po.jpg" alt="포트폴리오 홈페이지">
+                                </div>
+                            <span> 자기소개 페이지</span>
                             </div>
-                          <span> 자기소개 페이지</span>
-                        </div>
-                    </li>
-                     <li class="mr0" data-name="toast">
-                        <div>
-                            <div class="web-img">
-                                 <img src="img/sukbong.jpg" alt="석봉토스트 홈페이지">
-                             </div>
-                             <span>석봉토스트</span>
-                         </div>
-                     </li>
-                     <li data-name="dino">
-                         <div>
-                            <div class="web-img">
-                                 <img src="img/dino.jpg" alt="쥬라기 월드 홈페이지">
-                             </div>
-                             <span>쥬라기 월드</span>
-                        </div>
-                    </li>
-                    <li data-name="movist">
-                          <div>
-                          <div class="web-img">
-                                <img src="img/movist.jpg" alt="무비스트 홈페이지">
-                          </div>
-                          <span>영화 웹진 무비스트</span>
-                        </div>
-                    </li>
-                    <li data-name="ljh">
-                        <div>
-                           <div class="web-img">
-                                 <img src="img/ljh.jpg" alt="이준호 홈페이지">
+                        </li>
+                        <li class="mr0" data-name="toast">
+                            <div>
+                                <div class="web-img">
+                                    <img src="img/sukbong.jpg" alt="석봉토스트 홈페이지">
+                                </div>
+                                <span>석봉토스트</span>
                             </div>
-                            <span>친구를 주제로 만든 홈페이지</span>
-                        </div>
-                    </li>                    
-                </ul>
-                <ul class="web-list-button">
-                    <li><img src="img/left.png" alt="왼쪽버튼"></li>
-                    <li><img src="img/right.png" alt="오른쪽버튼"></li>
-                </ul>
+                        </li>
+                        <li data-name="dino">
+                            <div>
+                                <div class="web-img">
+                                    <img src="img/dino.jpg" alt="쥬라기 월드 홈페이지">
+                                </div>
+                                <span>쥬라기 월드</span>
+                            </div>
+                        </li>
+                        <li data-name="movist">
+                            <div>
+                            <div class="web-img">
+                                    <img src="img/movist.jpg" alt="무비스트 홈페이지">
+                            </div>
+                            <span>영화 웹진 무비스트</span>
+                            </div>
+                        </li>
+                        <li data-name="ljh">
+                            <div>
+                            <div class="web-img">
+                                    <img src="img/ljh.jpg" alt="이준호 홈페이지">
+                                </div>
+                                <span>친구를 주제로 만든 홈페이지</span>
+                            </div>
+                        </li>                    
+                    </ul>
+                    <ul class="web-list-button">
+                        <li><img src="img/left.png" alt="왼쪽버튼"></li>
+                        <li><img src="img/right.png" alt="오른쪽버튼"></li>
+                    </ul>
+                </article>
             </section>
         </main>
         <footer id="footer-wrap" class="realm">
-           <ul class="contact-list pagehide">
-                <li>
-                    <p>
-                        <img src="img//email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.png" alt="이메일 아이콘">
-                    </p>
-                    <p>dlxorb1223@naver.com</p>
-                </li>
-                <li>
-                    <p>
-                        <img src="img/phone-symbol-of-an-auricular-with-circular-cord-around_icon-icons.com_56477.png" alt="전화 아이콘">
-                    </p>
-                    <p>010-8464-9629</p>
-                </li>
-            </ul>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function() {
+                emailjs.init("nld38aSA75T6EDoC7");
+                })();
+            </script>
+             <script type="text/javascript">
+                window.onload = function() {
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        // generate a five digit number for the contact_number variable
+                        this.contact_number.value = Math.random() * 100000 | 0;
+                        // these IDs from the previous steps
+                        emailjs.sendForm('dlxorb1223', 'template_fbg6sds', this)
+                            .then(function() {
+                                console.log('SUCCESS!');
+                            }, function(error) {
+                                console.log('FAILED...', error);
+                            });
+                    });
+                }
+            </script>
+            <article>
+                <h2>contact</h2>
+                <p>감사합니다.</p>
+                <p> 꿈꾸는 것에 끝나지 않고, 직접 구현할 수 있는 사람이 되고 싶습니다.</p>
+                <div id="contact-wrap">
+                    <address class="contact-phone">
+                            <span class="phone-icon">
+                               <img src="img/phone.png" alt="전화 아이콘">
+                            </span> 
+                            <span>
+                                010-8464-9629
+                            </span>
+                    </address>
+                    <form id="contact-form">
+                        <div>
+                            <input type="hidden" name="contact_number">
+                            <label>Name</label>
+                            <input type="text" name="from_name">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="email" name="from_email">  
+                            
+                        </div>
+                        <div>
+                            <label>Message</label>
+                            <textarea name="message"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="보내기">
+                            <input type="reset" value="다시쓰기">
+                        </div>
+                    </form>
+                </div>
+                <ul class="foot-logo-list">
+                    <li>
+                        <img src="img/bi.png" alt="포트폴리오 로고">
+                    </li>
+                    <li>
+                        <img src="img/bi_fff.png" alt="개인 로고">
+                    </li>
+                    
+            </article>
         </footer>
     </div>
 </body>
