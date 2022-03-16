@@ -5,8 +5,12 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-};
-
+}
+#main-wrap article, #footer-wrap article{
+    width:1400px;
+    margin:auto;
+    padding-top:70px;
+}
 a{
     text-decoration:none; 
     color:#333;
@@ -150,11 +154,6 @@ section{
      background-attachment: fixed;
      background: linear-gradient(to bottom, #27aae1,#9e7eb9);
 }
-#profile-wrap>article{
-    width:1400px;
-    margin:auto;
-    
-}
 #profile-wrap>article:after{
     display:block;
     content:"";
@@ -200,7 +199,7 @@ section{
     width:250px;
     height:250px;
     overflow:hidden;
-    margin:50px auto;
+    margin:auto;
     border-radius: 100%;
     border:2px solid #000;
     background-color:rgb(176, 223, 216);
@@ -335,10 +334,6 @@ section{
 #web-wrap{
     background: linear-gradient(to bottom,#9e7eb9,#bbb8dc);
     position:relative;
-}
-#web-wrap article{
-    width:1400px;
-    margin:auto;
 }
 .web-list:after{
     clear:both;
@@ -551,11 +546,6 @@ table{
 }
 #footer-wrap article>p:First-child{
     font-size:50px;
-}
-#footer-wrap article{
-    width:1400px;
-    margin:auto;
-  
 }
 #contact-wrap{
     width:50%;
