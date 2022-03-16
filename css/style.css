@@ -209,6 +209,7 @@ section{
 }
 .profile-info{
     width:100%;
+    margin-top:40px;
 }
 .profile-info li{
     float:left;
@@ -233,9 +234,6 @@ section{
 .content-title{
     font-weight:bold;
     font-size:20px;
-}
-#visual-wrap .profile-info{
-    margin-left:50px;;
 }
 .icon-list, .web-list{
     width: 100%;

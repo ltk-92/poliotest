@@ -8,7 +8,6 @@
         width:50%;
         margin:auto;
         position:static;
-        padding-top:50px;
         writing-mode:horizontal-tb;
         transform: translateY(0%); 
     }
@@ -67,13 +66,15 @@
     #main-wrap .realm, #footer-wrap{
         height:200vh;
     }
+    #visual-wrap .realm{
+        height:100vh;
+    }
     #main-wrap article,#footer-wrap article{
         width:90%;
         margin:auto;
     }
     h2{
         position:static;
-        padding-top:50px;
         writing-mode:horizontal-tb;
         transform: translateY(0%); 
     }
