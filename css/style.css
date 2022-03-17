@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @font-face {
-    font-family: 'RixYeroljeongdo_Regular';
+    font-family:'RixYeoljeongdo_Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -163,6 +163,7 @@ section{
 }
 .name{
     font-size:30px;
+    font-weight:bold;
    
 }
 .pagehide{
@@ -231,7 +232,8 @@ section{
     font-size:30px;
     font-weight:normal;
     margin:20px 0;
-    font-family: 'RixYeoljeongdo_Regular';
+    font-family:'RixYeoljeongdo_Regular';
+    
 }
 .content-title{
     font-weight:bold;
@@ -292,7 +294,7 @@ section{
     left:50%;
     top:50%;
     transform:translate(-50%,-50%);
-    font-family: 'RixYeroljeongdo_Regular';
+    font-family:'RixYeoljeongdo_Regular';
     text-align:center;
     line-height:30px;
 }
@@ -375,14 +377,25 @@ section{
 .web-list span{
     display:inline-block;
     width:100%;
-    height:70px;
+    height:50px;
     text-align:center;
     color:#333;
     background-color:#fff;
     box-sizing:border-box;
     font-weight:bold;
-    font-size:20px;
-    line-height:70px;
+    font-size:22px;
+    line-height:50px;
+}
+.web-list .web-source{
+    font-size: 15px;
+    color:#555;  
+}
+.web-list .web-source mark{
+    margin:0 2px;
+    background-color:#8552b1;
+    color:#fff;
+    font-weight:normal;
+    padding:5px 3px;
 }
 .web-list li:hover .web-img>img{
      transition:all 2s;
@@ -390,10 +403,9 @@ section{
 }
 .web-list li:first-child:hover .web-img>img{
     top:-670px;
-   
 }
 .web-list li:hover span{
-    background-color:skyblue;
+    background-color:#8552b1;
     color:#fff;
 }
 .web-list li:nth-child(2):hover .web-img>img{
@@ -537,7 +549,7 @@ table{
 }
 #footer-wrap>article>p{
     text-align:center;
-    font-family: 'RixYeroljeongdo_Regular';
+    font-family:'RixYeoljeongdo_Regular';
     font-size:25px;
     color:#fff;
     margin-bottom:30px;
@@ -559,7 +571,7 @@ table{
     height:60px;
     margin:auto;
     overflow:hidden;
-    font-family: 'RixYeroljeongdo_Regular';
+    font-family:'RixYesoljeongdo_Regular';
     font-size:30px;
     color:#fff;
     text-shadow:#4eb8b9 0 5px 0;
@@ -607,7 +619,7 @@ table{
     display:block;
     width:20%;
     height:50px;
-    font-family: 'RixYeroljeongdo_Regular';
+    font-family:'RixYeoljeongdo_Regular';
     background-color:#4eb8b9;
     font-size:20px;
     color:#fff;
