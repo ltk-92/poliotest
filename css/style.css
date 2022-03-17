@@ -5,6 +5,8 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}.wrap .realm{
+    height:100vh;
 }
 #main-wrap article, #footer-wrap article{
     width:1400px;
@@ -37,7 +39,7 @@ a{
     cursor:pointer;
 }
 .header-wrap{
-    width:50%;
+    width:100%;
     position:fixed;
     left:0;
     top:0;
@@ -142,7 +144,6 @@ section{
     position:relative;
 }
 #profile-wrap{
-    height:800px;
     background: linear-gradient(to bottom, #4eb8b9, #27aae1);
     background-size:cover;
     background-repeat:no-repeat;
@@ -155,12 +156,6 @@ section{
       background-color:#81d3eb;
      background-attachment: fixed;
      background: linear-gradient(to bottom, #27aae1,#9e7eb9);
-}
-#profile-wrap>article:after{
-    display:block;
-    content:"";
-    clear:both;
-    float:left;
 }
 .profile-info p{
     line-height:2;
@@ -212,6 +207,11 @@ section{
 .profile-info{
     width:100%;
     margin-top:40px;
+}
+.profile-info>ul:after{
+    display:block;
+    content:"";
+    clear:both;
 }
 .profile-info li{
     float:left;
@@ -296,7 +296,7 @@ section{
     text-align:center;
     line-height:30px;
 }
-.donut-control-list>li{
+.donut-control{
     width:40px;
     height:40px;
     cursor: pointer;
@@ -533,7 +533,6 @@ table{
 }
 #footer-wrap{
     background: #b0dfd8;
-    height:1000px;
     position:relative;
 }
 #footer-wrap>article>p{
