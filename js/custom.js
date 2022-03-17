@@ -23,13 +23,13 @@
         for(i=m;i>=0;i--){
             sum += $('.realm').eq(i).height();
         };
-		var nowTop = sum;
+		var nowTop = sum+30;
 		$('html, body').stop().animate({'scrollTop':nowTop},1000);
 		var ji = m+1;
-		$(".realm").children().addClass("pagehide");
-		$(".realm").children().removeClass("pageshow");	
-		$(".realm").eq(ji).children().removeClass("pagehide");
-		$(".realm").eq(ji).children().addClass("pageshow");
+		//$(".realm").children().addClass("pagehide");
+		//$(".realm").children().removeClass("pageshow");	
+		//$(".realm").eq(ji).children().removeClass("pagehide");
+		//$(".realm").eq(ji).children().addClass("pageshow");
 		console.log("ji="+ji)
 	});
     
