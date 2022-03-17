@@ -63,6 +63,9 @@
 }
 /*mobile start*/
 @media all and (min-width: 0px) and (max-width: 900px){
+   h1{
+       width:50%;
+   }
     #main-wrap .realm, #footer-wrap{
         height:200vh;
     }
