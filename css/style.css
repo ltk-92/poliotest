@@ -387,14 +387,15 @@ section{
     line-height:50px;
 }
 .web-list .web-source{
+    height:35px;
+    line-height:35px;
     font-size: 15px;
     color:#555;  
 }
 .web-list .web-source mark{
     margin:0 2px;
-    background-color:#8552b1;
+    background-color:#9e7eb9;
     color:#fff;
-    font-weight:normal;
     padding:5px 3px;
 }
 .web-list li:hover .web-img>img{
@@ -548,14 +549,18 @@ table{
     position:relative;
 }
 #footer-wrap>article>p{
-    text-align:center;
+    width:100%;
+    text-align: center;
     font-family:'RixYeoljeongdo_Regular';
     font-size:25px;
     color:#fff;
-    margin-bottom:30px;
+    padding-bottom:30px;
    text-shadow:#4eb8b9 0 5px 0;
 }
-#footer-wrap article>p:First-child{
+
+#footer-wrap p.thankyou{
+    width:45%;
+    margin:auto;
     font-size:50px;
 }
 #contact-wrap{

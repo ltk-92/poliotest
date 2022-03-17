@@ -282,6 +282,10 @@
     #footer-wrap>article>p{
         font-size:20px;
     }
+    #footer-wrap p.thankyou{
+        width:100%;
+        font-size:30px;
+    }
     .contact-phone{
         font-size:25px;
     }
