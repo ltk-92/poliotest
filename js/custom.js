@@ -9,6 +9,12 @@
 		
 	//})
 	var textset;
+	if($(window).width()<=1430){
+		$(window).scroll(function(){
+			clearInterval(textset);
+			loadview();
+		});
+	};
 	$(".main-menu>li").on('click',function(){//메뉴 클릭시 스크롤 이동
 		logodel();
 		//e.preventDefault();
@@ -169,9 +175,8 @@
 		};
 		textset = setInterval(textmotion,interval);			
 		if($(window).scrollTop()>0){
-			//clearInterval(textset);
+			clearInterval(textset);
 			$(".greeting-list>p").hide();
-			//textset = "empty";
 		};
 		//console.log("스크롤값"+$(window).scrollTop());
 		//console.log("textset:"+textset);
@@ -202,6 +207,7 @@
 		$(window).resize(function(){
 			if($(window).width()<=1430){
 				$(window).scroll(function(){
+					clearInterval(textset);
 					loadview();
 				});
 			};
