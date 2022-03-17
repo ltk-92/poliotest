@@ -81,8 +81,8 @@
         display:inline-block;
     }
     h2{
-        width:80%;
-        margin:auto;
+        width:100%;
+        font-size:60px;
         position:static;
         writing-mode:horizontal-tb;
         transform: translateY(0%); 
