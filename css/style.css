@@ -626,11 +626,11 @@ table{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:50px auto;
+    margin:auto;
+    padding:50px 0 20px 0;
     opacity:0.5;
 }
 .foot-logo-list li{
-  
     width:60%;
 }
 .foot-logo-list li:last-child{
