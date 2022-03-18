@@ -12,23 +12,20 @@
     
     //화살표 버튼
      $(".web-list-button>li:first").click(function(){
-        $(".web-list>li.web-on").prev().addClass("web-on");
-        $(".web-list>li.web-on").next().removeClass("web-on");
+        var webList = $(".web-list");
+        $(".web-list>li").fadeOut();
+        $(".web-list>li:last").prependTo(webList);
+        $(".web-list>li").removeClass("web-on");
+        $(".web-list>li:last").addClass("web-on");
+        $(".web-on").fadeIn();
     });
     $(".web-list-button>li:last").click(function(){
-        $(".web-list>li.web-on").next().addClass("web-on");
-        $(".web-list>li.web-on").prev().removeClass("web-on");
-    });
-    $(".web-list-button>li:first").mouseenter(function(){
-        $(this).find("img").attr("src","img/left-hover.png");
-    })
-     $(".web-list-button>li:first").mouseleave(function(){
-        $(this).find("img").attr("src","img/left.png");
-    })
-    $(".web-list-button>li:last").mouseenter(function(){
-        $(this).find("img").attr("src","img/right-hover.png");
-    });
-     $(".web-list-button>li:last").mouseleave(function(){
-        $(this).find("img").attr("src","img/right.png");
+        var webList = $(".web-list");
+        $(".web-list>li").fadeOut();
+        $(".web-list>li:first").appendTo(webList);
+        $(".web-list>li").removeClass("web-on");
+        $(".web-list>li:first").addClass("web-on");
+        $(".web-on").fadeIn();
+        
     });
 }); //End jquery
