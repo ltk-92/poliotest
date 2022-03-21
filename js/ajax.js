@@ -82,7 +82,7 @@ $(function(){
                     table.append(tbody);
                     tbody.append(tr);
                     $(".info-con").find("a:empty").parent("td").remove();
-                    //$(".info-con").find("tr:empty").remove();          
+                    $(".info-con").find("tr:empty").remove();          
                  })
             },
             error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.

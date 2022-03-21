@@ -496,10 +496,10 @@ section{
 }
 .web-info a{
     display:block;
-    width:100px;
+    width:100%;
+    padding-right:5%;
     height:50px;
     line-height:50px;
-    margin:0 10px 10px 0;
     box-sizing:border-box;
     background-color:skyblue;
     color:#fff; 
@@ -509,11 +509,14 @@ section{
     display:none;
 }
 .info-con a.main-btn{
-    width:430px;
+    width:100%;
     margin-right:0;
 }
 .web-info .green-table a{
     background-color:#419400;
+}
+.web-info table td:nth-child(4)>a{
+margin-right:0;
 }
 .web-info .green-table a:hover{
     background-color:#01682f;
@@ -548,7 +551,16 @@ section{
     color:#fff
 }
 table{
+    width:100%;
     margin:auto;
+    table-layout:fixed;
+}
+td{
+    width:22%;
+    margin-right:4%;
+}
+td:nth-child(4){
+    margin-right:0;
 }
 .web-info table a{
     letter-spacing:-1px;

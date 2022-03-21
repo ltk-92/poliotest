@@ -277,7 +277,7 @@
     }
     .web-list-button{
         display:block;
-        width:95%;
+        width:100%;
         overflow:hidden;
         position:absolute;
         top:50%;
