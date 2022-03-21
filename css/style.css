@@ -7,11 +7,17 @@
     font-style: normal;
 }.wrap .realm{
     height:100vh;
+    display:table;
 }
 #main-wrap article, #footer-wrap article{
-    width:1400px;
+    
+    display:table-cell;
+    vertical-align:middle;
+    
+}
+#main-wrap .center-wrap, #footer-wrap .center-wrap{
+    width:74%;
     margin:auto;
-    padding-top:70px;
 }
 a{
     text-decoration:none; 
@@ -242,7 +248,7 @@ section{
 .icon-list, .web-list{
     width: 100%;
     margin:auto;
-    padding:100px 0;
+    padding: 50px 0;
 }
 .icon-list:after{
     clear:both;
@@ -350,8 +356,11 @@ section{
     box-shadow:5px 5px 5px 5px rgba(115, 8, 119, 0.3);
     cursor:pointer;
 }
-.web-list li:nth-child(3),.web-list li:nth-child(6),.web-list li:nth-child(9){
+.web-list li:nth-child(3){
     margin-right:0;
+}
+.web-list li:nth-child(4),.web-list li:nth-child(5){
+    margin-bottom:0;
 }
 .web-img{
     width:100%;
@@ -403,7 +412,7 @@ section{
     top:-300px;
 }
 .web-list li:first-child:hover .web-img>img{
-    top:-670px;
+    top:-800px;
 }
 .web-list li:hover span{
     background-color:#8552b1;
@@ -548,20 +557,20 @@ table{
     background: #b0dfd8;
     position:relative;
 }
-#footer-wrap>article>p{
+#footer-wrap .center-wrap>p{
     width:100%;
     text-align: center;
     font-family:'RixYeoljeongdo_Regular';
     font-size:25px;
     color:#fff;
-    padding-bottom:30px;
+    padding-bottom:20px;
    text-shadow:#4eb8b9 0 5px 0;
 }
 
 #footer-wrap p.thankyou{
     width:45%;
     margin:auto;
-    font-size:50px;
+    font-size:40px;
 }
 #contact-wrap{
     width:50%;
@@ -585,11 +594,12 @@ table{
 }
 .contact-phone span{
     vertical-align: middle;
+    font-weight:bold;
 }
 .phone-icon{
     display:inline-block;
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
 }
 .phone-icon img{
     width:100%;
@@ -611,7 +621,7 @@ table{
     margin:5px 0 5px 0;
 }
 #contact-form input[type="text"], #contact-form input[type="email"]{
-    height:40px;
+    height:30px;
     font-size:30px;
     padding:5px
 }

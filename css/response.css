@@ -4,6 +4,11 @@
         height:auto;
     }
     #main-wrap article,#footer-wrap article{
+        padding-top:70px;
+        height:auto;
+        margin:auto;
+    }
+    #main-wrap .center-wrap, #footer-wrap .center-wrap{
         width:90%;
         margin:auto;
     }
@@ -97,8 +102,12 @@
     }
    
     #main-wrap article,#footer-wrap article{
-        width:90%;
+        padding-top:70px;
         height:auto;
+        margin:auto;
+    }
+    #main-wrap .center-wrap, #footer-wrap .center-wrap{
+        width:90%;
         margin:auto;
     }
     .profile-info li, .icon-list li{
@@ -227,6 +236,7 @@
     }
     #web-wrap .web-list{
         width:100%;
+        padding:50px 0;
         overflow:hidden;
     }
     #web-wrap .web-list li{
@@ -313,21 +323,23 @@
     #contact-wrap{
         width:100%;
     }
-    #footer-wrap>article>p{
+    #footer-wrap .center-wrap>p{
         font-size:20px;
+        line-height:30px;
     }
     #footer-wrap p.thankyou{
         width:100%;
-        font-size:30px;
+        font-size:25px;
     }
     .contact-phone{
-        font-size:25px;
+        font-size:20px;
+        font-weight:bold;
     }
     #contact-form input[type="submit"], #contact-form input[type="reset"]{
         font-size:15px;
     }
     .foot-logo-list{
-        width:80%;
+        width:50%;
         padding:50px 0 20px 0;
     }
 }
