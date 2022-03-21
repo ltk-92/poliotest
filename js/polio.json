@@ -27,5 +27,20 @@
         "img": "modal-effect.png",
         "text": "각 리스트 클릭하면 제작한 사이트에 대한 상세정보와 링크가 있는 모달창이 나오도록 제작했습니다."
 
+    },
+    {
+        "tableColor":"black-table"
+    },
+    {
+        "linkName1":"메인페이지 바로가기",
+        "link1":"https://ltk-92.github.io/ltkpo/index.html",
+        "colspan":"4",
+        "class":"main-btn"
+    },
+    {
+        "linkName1":"다이어리페이지 바로가기",
+        "link1":"https://ltk-92.github.io/ltkpo/diary/diaty.html",
+        "colspan":"4",
+        "class":"main-btn"
     } 
 ]
