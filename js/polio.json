@@ -29,18 +29,16 @@
 
     },
     {
-        "tableColor":"black-table"
+        "tableColor":"black-list"
     },
     {
         "linkName1":"메인페이지 바로가기",
         "link1":"https://ltk-92.github.io/ltkpo/index.html",
-        "colspan":"4",
         "class":"main-btn"
     },
     {
         "linkName1":"다이어리페이지 바로가기",
         "link1":"https://ltk-92.github.io/ltkpo/diary/diaty.html",
-        "colspan":"4",
         "class":"main-btn"
     } 
 ]

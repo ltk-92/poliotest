@@ -511,41 +511,38 @@ section{
     width:100%;
     margin-right:0;
 }
-.web-info .green-table a{
+.web-info .green-list a{
     background-color:#419400;
 }
-.web-info table td:nth-child(4)>a{
-margin-right:0;
-}
-.web-info .green-table a:hover{
+.web-info .green-list a:hover{
     background-color:#01682f;
 }
-.web-info .black-table a{
+.web-info .black-list a{
     background-color:#555;
 }
-.web-info .black-table a:hover{
+.web-info .black-list a:hover{
     background-color:#000;
 }
-.web-info .sky-table a{
+.web-info .sky-list a{
     background-color:#14b8db;
 }
-.web-info .sky-table a:hover{
+.web-info .sky-list a:hover{
     background-color:#1facc0;;
 }
-.web-info .purple-table a{
+.web-info .purple-list a{
     background-color:#7808b9;
 }
-.web-info .purple-table a:hover{
+.web-info .purple-list a:hover{
     background-color:#4f047a;;
 }
-.web-info .white-table a{
+.web-info .white-list a{
     background-color:#fff;
     border:1px solid #000;
     box-sizing:border-box;
     color:#333;
     transition:all 0.5s;
 }
-.web-info .white-table a:hover{
+.web-info .white-list a:hover{
     background-color:#000;
     color:#fff
 }
