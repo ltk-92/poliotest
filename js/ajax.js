@@ -3,8 +3,6 @@ $(function(){
         var dataName = $(this).data("name");
         var webinfo = $('<div/>');
         var ul = $('<ul/>');
-       
-        
         var modal =   $('<div/>');
         webinfo.attr("class","web-info");
         modal.attr("class","modal");
@@ -32,7 +30,6 @@ $(function(){
                     var link = item.link;
                     var linkName = item.linkName;
                     var tableColor = item.tableColor;
-                    var colspan = item.colspan;
                     var btnClass= item.class;
                     var img = $("<img/>");
                     img.attr("src","img/"+info_img);
@@ -40,9 +37,8 @@ $(function(){
                     title.attr("class","info-title");
                     var text = $('<p />').html(info_text);
                     var text2 = $('<p />').html(info_text2);
-                    ul.attr("class",tableColor);
-                    var ul = $('<ul/>');
                     var infoCon = $("<div />");
+                    ul.attr("class",tableColor);
                     //var td = $('<td/>');
                     
                     //var a = $("<a/>");
@@ -54,14 +50,14 @@ $(function(){
                        var linkNames = [];
                        linkNames[v] = eval("item.linkName"+t);
                        var a = $("<a/>");
-                       var li = $('<li/>');
                        a.attr("href",links[v]); 
                        a.text(linkNames[v]);
-                       a.attr("class",btnClass);
                        a.attr("target","_blank");
+                       var li = $('<li/>');
                        li.append(a);
-                       
-                                 
+                       li.attr("class",btnClass);
+                       ul.append(li); 
+                             
                     };
                     console.log("links"+v+links[v]);
                     console.log("linkNames"+v+linkNames[v]);      
@@ -72,16 +68,16 @@ $(function(){
                     infoCon.append(text2);
                     webinfo.append(infoCon);
                     $(".info-con").find("p:empty").remove();
-                   
                     $(".info-con").find("img[src='img/undefined']").remove();
                     console.log("img:"+img);
                     console.log("title:"+title);
                     console.log("text:"+text);
+                     
+                    infoCon.append(ul);
                    
-                    ul.append(li);
-                   
-                    $(".info-con").find("a:empty").parent("td").remove();
-                    $(".info-con").find("tr:empty").remove();          
+                    
+                    $(".info-con").find("a:empty").parent("li").remove();
+                   // $(".info-con").find("tr:empty").remove();          
                  })
             },
             error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
