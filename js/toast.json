@@ -39,7 +39,6 @@
     {
         "linkName1":"메인페이지 바로가기",
         "link1":"https://ltk-92.github.io/ltkpo/toast/index.html",
-        "colspan":"4",
         "class":"main-btn"
     },
     {
@@ -47,29 +46,25 @@
         "linkName2":"오시는길",
         "linkName3":"매장찾기",
         "linkName4":"상담신청",
+        "linkName5":"식품",
+        "linkName6":"음료",
+        "linkName7":"사이드메뉴",
+        "linkName8":"빙수",
+        "linkName9":"이벤트",
+        "linkName10":"로그인",
+        "linkName11":"회원가입",
+        "linkName12":"언론보도",
         "link1":"https://ltk-92.github.io/ltkpo/toast/brand-story.html",
         "link2":"https://ltk-92.github.io/ltkpo/toast/road.html",
         "link3":"https://ltk-92.github.io/ltkpo/toast/map.html",
-        "link4":"https://ltk-92.github.io/ltkpo/toast/consult.html"
-    },
-    {
-        "linkName1":"식품",
-        "linkName2":"음료",
-        "linkName3":"사이드메뉴",
-        "linkName4":"빙수",
-        "link1":"https://ltk-92.github.io/ltkpo/toast/menu-cook.html",
-        "link2":"https://ltk-92.github.io/ltkpo/toast/menu-drink.html",
-        "link3":"https://ltk-92.github.io/ltkpo/toast/menu-sidemenu.html",
-        "link4":"https://ltk-92.github.io/ltkpo/toast/menu-ice.html"
-    },
-    {
-        "linkName1":"이벤트",
-        "linkName2":"로그인",
-        "linkName3":"회원가입",
-        "linkName4":"언론보도",
-        "link1":"https://ltk-92.github.io/ltkpo/toast/event.html",
-        "link2":"https://ltk-92.github.io/ltkpo/toast/login.html",
-        "link3":"https://ltk-92.github.io/ltkpo/toast/signup.html",
-        "link4":"https://ltk-92.github.io/ltkpo/toast/article.html"
-    }       
+        "link4":"https://ltk-92.github.io/ltkpo/toast/consult.html",
+        "link5":"https://ltk-92.github.io/ltkpo/toast/menu-cook.html",
+        "link6":"https://ltk-92.github.io/ltkpo/toast/menu-drink.html",
+        "link7":"https://ltk-92.github.io/ltkpo/toast/menu-sidemenu.html",
+        "link8":"https://ltk-92.github.io/ltkpo/toast/menu-ice.html",
+        "link9":"https://ltk-92.github.io/ltkpo/toast/event.html",
+        "link10":"https://ltk-92.github.io/ltkpo/toast/login.html",
+        "link11":"https://ltk-92.github.io/ltkpo/toast/signup.html",
+        "link12":"https://ltk-92.github.io/ltkpo/toast/article.html"
+    }
 ]
