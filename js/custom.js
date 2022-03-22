@@ -1,20 +1,13 @@
-﻿$(document).ready(function(){
-	
-//$('section').on('mousemove',function(e){
-		
-	//	var posX = e.pageX;
-	//	var posY = e.pageY;
-	//	$('.p11').css({'right':0-(posX/30),'botttom':0-(posY/30)});
-	//	$('.p12').css({'right':130+(posX/30),'botttom':-40+(posY/30)});
-		
-	//})
+﻿$(document).ready(function(){	
 	var textset;
-	if($(window).width()<=1430){
 		$(window).scroll(function(){
 			clearInterval(textset);
 			loadview();
 		});
-	};
+
+	draw(200, '.icon-bg', ' #b0dfd8', '#4eb8b9');
+	logodel();
+	loadview();
 	$(".main-menu>li").on('click',function(){//메뉴 클릭시 스크롤 이동
 		logodel();
 		//e.preventDefault();
@@ -50,18 +43,18 @@
 				pageshow(present);
 				var presentTop = present.offset().top;
 				$('html,body').stop().animate({'scrollTop':presentTop},2000,'easeOutExpo')
-				 if(delta>0 && $(this).index()==1){
-					clearInterval(textset);
-					slideText();
-				};
+				 //if(delta>0 && $(this).index()==1){
+					//clearInterval(textset);
+					//slideText();
+				//};
 			}else if(delta<0 && $(this).index()<3){
 				var present = $(this).next();
 				pageshow(present);
 				var presentTop = present.offset().top; 
 				$('html,body').stop().animate({'scrollTop':presentTop},2000,'easeOutExpo')
-				if(delta<0 && $(this).index()==0){
-					clearInterval(textset);
-				};
+				//if(delta<0 && $(this).index()==0){
+					//clearInterval(textset);
+				//};
 			}else if(delta<0 && $(this).index()==3){
 				var present = $("#footer-wrap");
 				pageshow(present);
@@ -85,14 +78,6 @@
 	});		
     //end
 	 console.log("test");
-	
-	 $(window).ready(function(){
-		draw(200, '.icon-bg', ' #b0dfd8', '#4eb8b9');
-		logodel();
-		loadview();
-	 });
-	 
-	 
 	 function draw(max, classname, colorname1,colorname2){
 		var cnt=1;
 		 func1 = setInterval(donut,13);
@@ -184,8 +169,7 @@
 	};
 	function loadview(){
 		var sum = 0;
-		for(l=0;l<5;l++){
-			
+		for(l=0;l<5;l++){		
 			var win = $(window).scrollTop();
 			var realmL = $(".realm").eq(l).offset().top;
 			sum += $(".realm").eq(l).height();
@@ -199,6 +183,7 @@
 			};
 		};
 		if($("#visual-wrap").eq(0).children().hasClass("pageshow")){
+			clearInterval(textset);
 			slideText();
 		};
 
