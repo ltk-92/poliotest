@@ -254,13 +254,13 @@
     .web-list li, .web-img {
         height:250px;
     }
-    .web-list .web-info table{
-        width:100%;
-        border-collapse: separate;
+    .web-info {
+        width:90%;
+        padding:2%;
     }
-    .web-list .web-info td{
-        width:22%;
-        margin-right:4%;
+    .web-info ul{
+        width:100%;
+        margin:auto;
     }
     .info-con a.main-btn{
         width:100%;
