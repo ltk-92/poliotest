@@ -29,7 +29,7 @@ $(function(){
                     var info_text2 = item.text2;
                     var link = item.link;
                     var linkName = item.linkName;
-                    var tableColor = item.tableColor;
+                    var listColor = item.listColor;
                     var btnClass= item.class;
                     var img = $("<img/>");
                     img.attr("src","img/"+info_img);
@@ -38,7 +38,7 @@ $(function(){
                     var text = $('<p />').html(info_text);
                     var text2 = $('<p />').html(info_text2);
                     var infoCon = $("<div />");
-                    ul.attr("class",tableColor);
+                    ul.attr("class",listColor);
                     //var td = $('<td/>');
                     
                     //var a = $("<a/>");
