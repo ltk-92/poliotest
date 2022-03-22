@@ -35,10 +35,5 @@
         "linkName1":"메인페이지 바로가기",
         "link1":"https://ltk-92.github.io/ltkpo/index.html",
         "class":"main-btn"
-    },
-    {
-        "linkName1":"다이어리페이지 바로가기",
-        "link1":"https://ltk-92.github.io/ltkpo/diary/diaty.html",
-        "class":"main-btn"
-    } 
+    }
 ]
