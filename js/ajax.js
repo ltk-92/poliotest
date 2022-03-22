@@ -3,6 +3,8 @@ $(function(){
         var dataName = $(this).data("name");
         var webinfo = $('<div/>');
         var ul = $('<ul/>');
+       
+        
         var modal =   $('<div/>');
         webinfo.attr("class","web-info");
         modal.attr("class","modal");
@@ -39,12 +41,13 @@ $(function(){
                     var text = $('<p />').html(info_text);
                     var text2 = $('<p />').html(info_text2);
                     ul.attr("class",tableColor);
+                    var ul = $('<ul/>');
                     var infoCon = $("<div />");
                     //var td = $('<td/>');
                     
                     //var a = $("<a/>");
 
-                    for(t=1;t<12;t++){
+                    for(t=1;t<13;t++){
                        var v = t-1;
                        var links = [];
                        links[v] = eval("item.link"+t);
@@ -57,6 +60,7 @@ $(function(){
                        a.attr("class",btnClass);
                        a.attr("target","_blank");
                        li.append(a);
+                       
                                  
                     };
                     console.log("links"+v+links[v]);
@@ -73,10 +77,11 @@ $(function(){
                     console.log("img:"+img);
                     console.log("title:"+title);
                     console.log("text:"+text);
-                    infoCon.append(ul);
+                   
                     ul.append(li);
+                   
                     $(".info-con").find("a:empty").parent("td").remove();
-                    $(".info-con").find("li:empty").remove();          
+                    $(".info-con").find("tr:empty").remove();          
                  })
             },
             error : function(){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
