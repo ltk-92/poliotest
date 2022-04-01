@@ -64,7 +64,7 @@ h1{
 h1 img{
     width:100%
 }
-h2{
+.realm h2{
     color:#fff;
     font-family: 'Monoton', cursive;
     font-size:4.375rem;
@@ -76,6 +76,10 @@ h2{
     transform:translateY(-50%);
     font-weight:normal;
     opacity:0.5;
+}
+#visual-wrap h2{
+    opacity:0;
+    text-indent: 999px;
 }
 nav{
     width:60%;
