@@ -10,7 +10,7 @@
      <link href="css/response.css" type="text/css" rel="stylesheet">
      <link href="css/response.css" type="text/css" rel="stylesheet">
      <link href="css/sub_response.css" type="text/css" rel="stylesheet">
-     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+     <script src="js/jquery-1.12.4.min.js"></script>
      <script src="js/toast.js"></script>
      <script src="js/sub.js"></script>
      <!--[if lt IE 9]>
@@ -84,10 +84,7 @@
 <body>
       <div id="wrap">
        <header id="header-wrap">
-           <h1><a 
-           
-           href="index.html">석봉토스트</a></h1>
-           
+           <h1><a href="index.html">석봉토스트</a></h1>       
            <div id="top">
                <ul>
                    <li><a href="./login.html">로그인</a></li>
@@ -233,8 +230,9 @@
 
        <main id="main">
           <section id="sub-header">
-               <ul class="lnb">
-                      <li><a href="./brand-story.html">석봉토스트 소개</a></li>
+               <h2>lnb</h2>
+               <ul class="lnb"> 
+                    <li><a href="./brand-story.html">석봉토스트 소개</a></li>
                     <li><a href="#">석봉토스트 비전</a></li>
                     <li><a href="#">석봉토스트 연혁</a></li>
                     <li><a href="./article.html">언론보도</a></li>
@@ -242,10 +240,12 @@
                </ul>
             </section>
           <section class="sub-content">
+             <h3 class="gone">찾아가는 길 레이아웃</h3>  
              <article class='sub-content-con'>
+                <h4 class="gone">본사 지도</h4>
                 <div id="map"></div>
 
-                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bf4e754a7062f09d33803d24580cf0b7&libraries=services"></script>
+                <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bf4e754a7062f09d33803d24580cf0b7&libraries=services"></script>
                 <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                     mapOption = {
