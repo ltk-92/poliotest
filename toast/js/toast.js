@@ -1,5 +1,4 @@
 $(function(){
-    alert(parseInt($(".mobile-wrap").css("right")));
     $("#all_list").find("*").addClass("hidden");
    $("#gnb").mouseenter(function(){
      $("#all_list").find("*").removeClass("hidden");
