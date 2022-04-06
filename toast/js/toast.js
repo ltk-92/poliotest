@@ -1,5 +1,5 @@
 $(function(){
-
+    alert(parseInt($(".mobile-wrap").css("right")));
     $("#all_list").find("*").addClass("hidden");
    $("#gnb").mouseenter(function(){
      $("#all_list").find("*").removeClass("hidden");
@@ -90,8 +90,8 @@ $(function(){
 				 //$(".gnb_m").animate({"marginLeft" : "0px"});
 				$(".m_play").click(function(){
                        
-						if($(".mobile-wrap").css("right") == "-385px")
-						{
+						if(parseInt($(".mobile-wrap").css("right"))<0){
+						
 							$(".m_play").css({"transform":"rotate(180deg)"});
 							$(".mobile-wrap").animate({"right" : "0px"});
 						$(".play>a>img").attr("src","images/arrow_stop.png");
@@ -103,7 +103,7 @@ $(function(){
 							 $(".gnb_m_sub").slideUp();
 						}
 
-						else if($(".mobile-wrap").css("right") == "0px")
+						else if(parseInt($(".mobile-wrap").css("right"))==0)
 						{ 	$(".m_play").css({"transform":"rotate(0deg)"});
 							$(".mobile-wrap").animate({"right" : "-385px"})
 							$(".m_play>a>img").attr("src","images/arrow_play.png");
