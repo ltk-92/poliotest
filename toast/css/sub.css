@@ -47,10 +47,14 @@
 .sub-content-con{
     position:relative;
 }
-.sub-title{
+h2.sub-title{
+    position:static;
+    text-indent:0;
     width:100%;
     text-align:center;
     padding-top:130px;
+    font-size:38px;
+    opacity:1;
     color:#fff;
     
 }
