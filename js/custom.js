@@ -171,10 +171,10 @@
 		var sum = 0;
 		for(l=0;l<5;l++){		
 			var win = $(window).scrollTop();
-			var realmL = $(".realm").eq(l).offset().top;
+			var realmL = parseInt($(".realm").eq(l).offset().top)-500;
 			sum += $(".realm").eq(l).height();
 			var header = $("#header-wrap").height();
-			var pent = sum- header;		 
+			var pent = (sum- header)-500;		 
 			if(win >= realmL && win < pent){
 				$(".realm").children().addClass("pagehide");
 				$(".realm").children().removeClass("pageshow");
