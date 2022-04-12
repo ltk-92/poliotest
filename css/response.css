@@ -182,7 +182,7 @@
        font-size:12px;
    }
    h1{
-       width:240px;
+       width:170px;
    }
     nav{
         width:100%;
@@ -205,7 +205,7 @@
         height:40px;
         position:absolute;
         right:1%;
-        top:20px;
+        top:10px;
         z-index:7;
         cursor:pointer;
         border:2px solid #fff;
