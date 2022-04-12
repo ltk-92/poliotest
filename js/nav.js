@@ -6,8 +6,8 @@ $(function(){
         if($("nav").hasClass("close")){
             $("nav").removeClass("close");
             $("nav").addClass("open");
-            barFirst.css({"transform":"rotate(30deg) scaleX(1.1)"});
-            barLast.css({"transform":"rotate(-30deg) scaleX(1.1)"});
+            barFirst.css({"transform":"rotate(40deg) scaleX(1.2)"});
+            barLast.css({"transform":"rotate(-40deg) scaleX(1.2)"});
             barCenter.css("transform","scale(0)")
         }else if($("nav").hasClass("open")){
             $("nav").removeClass("open");
